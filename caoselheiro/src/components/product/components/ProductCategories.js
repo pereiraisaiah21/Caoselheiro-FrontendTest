@@ -47,7 +47,7 @@ function ProductCategories () {
                 {
                     categories.map( ( category, key ) => {
                         return (
-                            <SwiperSlide className={styles.__carousel}>
+                            <SwiperSlide className={styles.__carousel} key={key}>
                                 <img alt="" className={styles.__carousel__image} src={category.src} />
                                 <span>Nome</span>
                             </SwiperSlide>

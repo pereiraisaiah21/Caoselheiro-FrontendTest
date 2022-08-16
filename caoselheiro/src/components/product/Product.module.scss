@@ -1,11 +1,47 @@
-.product {
-
-}
+.product {}
 
 .__wrap {}
 
-.__carousel {}
+.__carousel {
+    &__image {
+        width: 277px;
+    }
+}
+
+.__showcase {
+    &__wrap {}
+    &__info {
+        &__carousel {}
+    }
+    &__carousel {}
+}
 
 .__item {
     &__box {}
+    &__favorite {
+        &__image {}
+    }
+    &__seal {
+        &__text {
+
+        }
+    }
+    &__product {}
+    &__image {}
+    &__name {}
+    &__prices {
+        &__box {
+
+        }
+        &__old {}
+        &__new {}
+    }
+    &__installment {
+        &__price {
+            
+        }
+        &__text {
+
+        }
+    }
 }
