@@ -1,0 +1,38 @@
+.home {
+    width: 100%;
+}
+.__carousel {
+    &__item {}
+    &__image {}
+    &__desc {
+        width: 375px;
+        position: absolute;
+        top: 119px;
+        left: 144px;
+    }
+    &__text {
+        font-weight: 800;
+        font-size: 40px;
+        line-height: 60px;
+        color: #fff;
+    }
+    &__button {
+        width: 131px;
+        height: 48px;
+        border: none;
+        border-radius: 10px;
+        background-color: #FBB900;
+        border-color: #F0D075;
+        color: #fff;
+        font-weight: 900;
+        font-size: 16px;
+        line-height: 24px;
+    }
+}
+
+.__wrap {
+    width: 100%;
+}
+
+
+
