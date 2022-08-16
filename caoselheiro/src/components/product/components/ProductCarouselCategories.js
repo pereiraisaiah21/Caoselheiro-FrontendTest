@@ -18,7 +18,7 @@ function ProductCarouselCategories ({
     return (
         
         <Swiper
-            spaceBetween={50}
+            spaceBetween={2}
             slidesPerView={5}
             onSlideChange={() => console.log('slide change')}
             onSwiper={(swiper) => console.log(swiper)}
@@ -30,8 +30,8 @@ function ProductCarouselCategories ({
                 ?
                 categories.map( ( category, key ) => {
                     return (
-                        <SwiperSlide className="" key={key}>
-                            <button>
+                        <SwiperSlide key={key}>
+                            <button className={styles.__showcase__info__button}>
                                 { category.name }
                             </button>
                         </SwiperSlide>

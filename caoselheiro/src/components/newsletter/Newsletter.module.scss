@@ -1,0 +1,56 @@
+.news {}
+
+.__news {
+    &__img {
+        background: url(https://s3-alpha-sig.figma.com/img/d86c/4325/a4d7026d81c45b86a6259cbd9b78bc54?Expires=1661731200&Signature=ZLto1Ea~s0Dg6~TH6VJpA1Z0BHnIIIX~asrDvVTFfyjCysKb7AQeXLC9~bkrmHHoqPlJUC-5P8t~xZgWeOLF4JcqXGDyX1djH74YxiqtZ4Mze~ap70ib-RURC7oT~mA9t56OiBsDW4iPYrU0gvZgxMZ0pZK3a6TL-cv6y1r98kWljUVk~VH7STH6a2u7-cJjIdNKS3HRl8X1AShVPOP6b4Z7GKfXub65S3i-UTsWOXaa1fg9K8H0YeXeeeLvEDgFJcdpYEsol2Kcj8rPMPZCO5DDLweEVJIyABlbKbNHXNOD5W58Fw0zLhZk2yK1N~5j5X~zbwjAOf67Gnx8MN5SaA__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA) no-repeat;
+        background-size: contain;
+        background-position: center;
+        height: 204px;
+        width: 500px;
+        margin: 0 auto;
+    }
+    &__form {
+        max-width: 600px;
+        margin: auto;
+        background-color: #FEF6E7;
+        border-radius: 20px;
+        padding: 30px 0;
+        text-align: center;
+        &__title {
+            font-weight: 700;
+            font-size: 24px;
+            line-height: 36px;
+            font-style: bold;
+            margin: 0;
+        }
+    }
+    &__box {
+        padding: 0;
+        border: none;
+        height: 48px;
+        margin-bottom: 10px;
+        text-align: center;
+        &__input {
+            height: 100%;
+            background-color: #FFF; 
+            border: 1px solid #E5E5E5;
+            border: none;
+            border-radius: 10px;
+        }
+    }
+    &__button {
+        background-color: #FBB900;
+        border: 1px solid #F0D075;
+        font-weight: 900;
+        font-size: 14px;
+        line-height: 21px;
+        color: #FFF;
+        border-radius: 10px;
+        height: 40px;
+        width: 145px;
+        text-transform: uppercase;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+    }
+}

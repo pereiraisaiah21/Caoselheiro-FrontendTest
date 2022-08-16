@@ -20,8 +20,8 @@ function ProductCarousel ({
 
     return (
         <Swiper
-            spaceBetween={50}
-            slidesPerView={1}
+            spaceBetween={20}
+            slidesPerView={4}
             onSlideChange={() => console.log('slide change')}
             onSwiper={(swiper) => console.log(swiper)}
             modules={[Navigation]}

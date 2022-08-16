@@ -66,8 +66,12 @@ function ProductShowcase () {
         <section className={styles.__showcase}>
             <div className={styles.__showcase__wrap}>
                 <div className={styles.__showcase__info}>
-                    <SectionTitle description="Meu cachorro ..." />
-                    <ProductCarouselCategories categories={productCategories.data} />
+                    <div className={styles.__showcase__info__name}>
+                        <SectionTitle description="Meu cachorro..." />
+                    </div>
+                    <div className={styles.__showcase__info__categories}>
+                        <ProductCarouselCategories categories={productCategories.data} />
+                    </div>
                 </div>
                 {
                     productData !== null

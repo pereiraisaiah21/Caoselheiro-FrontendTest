@@ -51,7 +51,7 @@ function BrandList () {
 
         <section>
             <div>
-            <SectionTitle description="Principais" />
+            <SectionTitle description="Principais marcas" />
             </div>
             <div>
                 <Swiper
@@ -60,17 +60,14 @@ function BrandList () {
                     onSlideChange={() => console.log('slide change')}
                     onSwiper={(swiper) => console.log(swiper)}
                     modules={[Navigation]}
-                    className={styles.__showcase__carousel}
+                    className={styles.__brand__carousel}
                 >
                     {   
                         brandsData.map( ( brand, key ) => {
                             return (
                                 <SwiperSlide className="" key={key}>
-                                    <figure>
-                                        <img alt="" className="" src="" />
-                                        <figcaption>
-                                            {brand.name}
-                                        </figcaption>
+                                    <figure className={styles.__brand__carousel__item}>
+                                        <img alt={brand.name} className={styles.__brand__carousel__image} src="https://s3-alpha-sig.figma.com/img/61d5/7758/569855920eb97e4d6a56cfe1add20fb2?Expires=1661731200&Signature=X-Wt8CXXv37kzfixcMybhapFsAha5SuGLq~HyHKMopoF0QGyfBJttOw4mSf4mR0rbZL0m7Rd3ppVuD~EeJTaynbInHDHLM2o0sGN~OWF8p98nJBUvcLb8Tm05j~YhzVWd0EOZjZ3rNbUWlq2SYd1fEUoZtYPImhm~-T5HkW2YhP-YfYh4DcL6W7PcPi2nB~ZK3JUuGxoQweC~1J-zP~0S00wqaUfefsNaxOqxE0MOqBg~pNWKD5qac1TU1U9XAYH26O81rxxGxM03EwXAtl1dKXOhUabh1JNOHqO6wZszl6OG-fLRCVHocssF6mWZA1W-XDG6ymt0YuDPkSQgsnZEQ__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA" />
                                     </figure>
                                 </SwiperSlide>
                             )

@@ -35,7 +35,7 @@ function InstgramCarousel () {
 
         <Swiper
             spaceBetween={0}
-            slidesPerView={6}
+            slidesPerView={5}
             onSlideChange={() => console.log('slide change')}
             onSwiper={(swiper) => console.log(swiper)}
             modules={[Navigation]}
@@ -44,7 +44,7 @@ function InstgramCarousel () {
             {
                 instagramImages.map( ( image, key ) => {
                     return (
-                        <SwiperSlide className="" key={key}>
+                        <SwiperSlide className={styles.__carousel__item} key={key}>
                             <InstagramListing imageSource={image.src} />
                         </SwiperSlide>
 

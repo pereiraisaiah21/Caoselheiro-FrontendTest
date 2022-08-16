@@ -4,5 +4,12 @@
 
 .__wrap {}
 .__carousel {
-    &__image {}
+    &__item {
+        width: inherit;
+        margin: 0;
+    }
+    &__image {
+        max-width: 100%;
+    }
+
 }

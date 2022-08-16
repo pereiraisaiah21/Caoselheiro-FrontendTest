@@ -10,7 +10,7 @@ function InstagramListing ({
 
     return (
 
-        <figure className={""}>
+        <figure className={styles.__carousel__item}>
             <img alt="" className={styles.__carousel__image} src={imageSource} />
         </figure>
     );
