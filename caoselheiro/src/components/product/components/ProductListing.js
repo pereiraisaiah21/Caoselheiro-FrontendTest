@@ -14,7 +14,6 @@ function ProductListing ({
     productData
 }) {
 
-    console.log("Item",productData)
     return (
         <li>
             <a className={styles.__item__box}>

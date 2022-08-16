@@ -5,6 +5,8 @@ import ProductCategories from "../../components/product/components/ProductCatego
 import ProductShowcase from "../../components/product/components/ProductShowcase";
 import BrandList from "../../components/brand/components/BrandList";
 import BlogList from "../../components/blog/components/BlogList";
+import AnnouncementPartner from "../../components/announcement/components/AnnouncementParnert";
+import InstagramImages from "../../components/social/instagram/components/InstagramList";
 
 import styles from "./Home.module.scss"
 /**
@@ -22,7 +24,9 @@ function Home () {
                 <ProductCategories />
                 <ProductShowcase />
                 <BrandList />
+                <AnnouncementPartner />
                 <BlogList />
+                <InstagramImages />
             </div>
         </main>
         

@@ -4,7 +4,7 @@ import { Navigation } from "swiper";
 
 import BlogListing from "./BlogListing";
 
-// import styles from "../Brand.module.scss";
+import styles from "../Blog.module.scss";
 import 'swiper/css';
 import 'swiper/css/navigation';
 

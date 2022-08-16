@@ -37,12 +37,6 @@ function BlogList () {
                 url : "",
                 image : ""
             },
-            {
-                name : "Buddy",
-                description : "Buddy",
-                url : "",
-                image : ""
-            },
         ]
     };
 
