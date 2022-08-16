@@ -2,7 +2,7 @@ import React from "react";
 
 import styles from "../Product.module.scss";
 
-import Heart from "../../../images/heart.png";
+import Heart from "../../../images/icons/heart.png";
 
 /**
  * 

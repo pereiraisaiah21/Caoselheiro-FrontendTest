@@ -1,8 +1,8 @@
 import React from "react";
 
-import Checked from "../../../images/checked.png";
-import Truck from "../../../images/truck.png";
-import CreditCard from "../../../images/creditCard.png";
+import Checked from "../../../images/icons/checked.png";
+import Truck from "../../../images/icons/truck.png";
+import CreditCard from "../../../images/icons/creditCard.png";
 
 import styles from "../Header.module.scss";
 

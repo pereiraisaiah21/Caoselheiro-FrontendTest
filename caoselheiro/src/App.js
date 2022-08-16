@@ -1,3 +1,6 @@
+import React, { useState } from "react";
+import StoreData from "./StoreData";
+
 import Header from "../src/components/header/Header";
 import Home from "./pages/home/Home";
 import Footer from "../src/components/footer/Footer";
@@ -5,11 +8,32 @@ import Footer from "../src/components/footer/Footer";
 import './App.scss';
 
 function App() {
+
+  const [ storeDataValues ] = useState({
+    name : "O Cãoselheiro",
+    alternativeName : "Cãoselheiro",
+    logo : "",
+    fantasy : "O Cãoselheiro Comércio LTDA",
+    cnpj : "30.324.633/0001-16",
+    contact : [{
+      phone : "(11) 97212-1314",
+      email : "ocaoselheiro@ocaoselheiro.com.br"
+    }],
+    media : [{
+      facebook : "/caoselheiro",
+      instagram : "@caoselheiro",
+      twitter : "@caoselheiro",
+    }]
+  });
+
   return (
+
     <div className="App">
-      <Header />
-      <Home />
-      <Footer />
+      <StoreData.Provider value={{storeDataValues}}>
+        <Header />
+        <Home />
+        <Footer />
+      </StoreData.Provider>
     </div>
   );
 }

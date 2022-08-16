@@ -7,6 +7,7 @@ import BrandList from "../../components/brand/components/BrandList";
 import BlogList from "../../components/blog/components/BlogList";
 import AnnouncementPartner from "../../components/announcement/components/AnnouncementParnert";
 import InstagramImages from "../../components/social/instagram/components/InstagramList";
+import Newsletter from "../../components/newsletter/Newsletter";
 
 import styles from "./Home.module.scss"
 /**
@@ -27,10 +28,10 @@ function Home () {
                 <AnnouncementPartner />
                 <BlogList />
                 <InstagramImages />
+                <Newsletter />
             </div>
         </main>
-        
-    )
+    );
 }
 
 export default Home;

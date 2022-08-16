@@ -1,10 +1,9 @@
 import React from "react";
 
-import Magnify from "../../../images/magnify.png";
-import Package from "../../../images/package.png";
-import Heart from "../../../images/heart.png";
-import User from "../../../images/user.png";
-import Cart from "../../../images/cart.png";
+import Package from "../../../images/icons/package.png";
+import Heart from "../../../images/icons/heart.png";
+import User from "../../../images/icons/user.png";
+import Cart from "../../../images/icons/cart.png";
 
 import styles from "../Header.module.scss";
 
