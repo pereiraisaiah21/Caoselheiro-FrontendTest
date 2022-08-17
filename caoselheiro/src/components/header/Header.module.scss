@@ -1,6 +1,7 @@
 .header {
     background-attachment: yellow;
     height: 144px;
+    position: relative;
 }
 
 .__wrap {
@@ -19,6 +20,8 @@
         color: #9F9F9F;
         font-size: 12px;
         line-height: 18px;
+        display: flex;
+        align-items: center;
     }
     &__image {
         height: 20px;
@@ -27,12 +30,15 @@
     }
     &__textHighlight {
         color: #FBB900;
+        padding: 0 3px;
     }
 }
 
 .__scope {
     display: flex;
     width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
     height: 72px;
     border-bottom: 1px solid #ccc;
     padding: 10px;
@@ -43,19 +49,28 @@
         }
     }
     &__sr {
-        width: 50%;
+        display: inline-flex;
+        align-items: center;
+        flex-grow: 1;
+        max-width: 657px;
         &__form {
             display: flex;
             justify-content: space-between;
             background-color: #FEF6E7;
             border-radius: 10px;
+            width: 100%;
+            position: relative;
         }
         &__input {
             border: none;
             background-color: unset;
-            padding: 10px;
+            padding: 10px 0 10px 24px;
             font-size: 14px;
             line-height: 21px;
+            color: #9F9F9F;
+            height: 48px;
+            width: 100%;
+            font-weight: 500;
         }
         &__button {
             border: none;
@@ -64,13 +79,23 @@
             background-size: cover;
             width: 28px;
             height: 28px;
+            position: absolute;
+            right: 10px;
+            top: 10px;
         }
     }
     &__op {
-        width: 30%;
+        width: 20%;
+        display: inline-flex;
+        justify-content: flex-end;
+        align-items: center;
         &__icon {
             width: 24px;
             height: 24px;
+        }
+        &__item {
+            display: block;
+            padding: 0 10px;
         }
     }
 }
@@ -84,17 +109,30 @@
     border-radius: 0 0 10px 10px;
     &__list {
         display: flex;
-        justify-content: center;
+        justify-content: space-evenly;
         padding: 0 10px;
         width: 100%;
         &__item {
             padding: 0 10px;
+            align-self: center;
         }
         &__anchor {
             font-weight: 600;
             font-size: 12px;
             line-height: 18px;
             text-transform: uppercase;
+            color: #9F9F9F;
+            &__offer {
+                color: #FBB900;
+                font-weight: 600;
+                font-size: 12px;
+                line-height: 18px;
+                text-transform: uppercase;
+            }
+        }
+        &__icon {
+            width: 20px;
+            margin: 0px 6px -5px 0;
         }
     }
 }

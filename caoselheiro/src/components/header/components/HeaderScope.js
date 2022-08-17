@@ -29,16 +29,16 @@ function HeaderScope () {
                 </form>
             </div>
             <div className={styles.__scope__op}>
-                <a className="" href="" title="">
+                <a className={styles.__scope__op__item} href="" title="">
                    <img alt="" className={styles.__scope__op__icon} src={Package} /> 
                 </a>
-                <a className="" href="" title="">
+                <a className={styles.__scope__op__item} href="" title="">
                    <img alt="" className={styles.__scope__op__icon} src={Heart} /> 
                 </a>
-                <a className="" href="" title="">
+                <a className={styles.__scope__op__item} href="" title="">
                     <img alt="" className={styles.__scope__op__icon} src={User} />
                 </a>
-                <a className="" href="" title="">
+                <a className={styles.__scope__op__item} href="" title="">
                     <img alt="" className={styles.__scope__op__icon} src={Cart} />
                 </a>
             </div>

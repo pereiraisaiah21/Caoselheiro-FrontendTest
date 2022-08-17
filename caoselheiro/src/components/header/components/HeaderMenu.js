@@ -1,5 +1,7 @@
 import React from "react";
 
+import Crowd from "../../../images/header/crowd.png";
+
 import styles from "../Header.module.scss";
 
 /**
@@ -44,13 +46,23 @@ function HeaderMenu () {
                         return (
                             <li className={styles.__menu__list__item} key={key}>
                                 <a className={styles.__menu__list__anchor} href={page.url} title={page.desc}>
-                                    {page.icon}
                                     {page.desc}
                                 </a>
                             </li>
                         )
                     })
                 }
+                <li className={styles.__menu__list__item}>
+                    <a className={styles.__menu__list__anchor__offer} href="/ofertas" title="Ir para Ofertas">
+                        OFERTAS
+                    </a>
+                </li>
+                <li className={styles.__menu__list__item}>
+                    <a className={styles.__menu__list__anchor} href="/ofertas" title="Ir para Ofertas">
+                        <img alt="" className={styles.__menu__list__icon} src={Crowd} />
+                        COLEÇÃO DE OUTONO
+                    </a>
+                </li>
             </ul>
         </div>
     )

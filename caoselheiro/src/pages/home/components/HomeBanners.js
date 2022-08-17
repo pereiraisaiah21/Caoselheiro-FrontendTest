@@ -4,6 +4,8 @@ import { Navigation } from "swiper";
 
 import BannerDescription from "../../../components/banners/components/BannerDescription";
 
+import Banner01 from "../../../images/banner/banner01.png";
+
 import styles from "../Home.module.scss";
 import 'swiper/css';
 import 'swiper/css/navigation';
@@ -21,9 +23,10 @@ function HomeBanners () {
             onSlideChange={() => console.log('slide change')}
             onSwiper={(swiper) => console.log(swiper)}
             modules={[Navigation]}
+            className={styles.__carousel__wrap}
         >
             <SwiperSlide className={styles.__carousel__item}>
-                <img alt="" className={styles.__home__carousel__image} src="https://tm.ibxk.com.br/2020/01/30/30021141299110.jpg?ims=1120x420" />
+                <div className={styles.__carousel__image} style={{background : `url(${Banner01})`}}/>
                 <BannerDescription 
                     parentClass={styles.__carousel__desc}
                     textClass={styles.__carousel__text}
