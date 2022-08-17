@@ -1,8 +1,10 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
+
 import ProductCarousel from "./ProductCarousel";
 import ProductCarouselCategories from "./ProductCarouselCategories";
 import SectionTitle from "../../titles/components/SectionTitle";
+import ButtonPrimary from "../../button/ButtonPrimary";
 
 import styles from "../Product.module.scss";
 
@@ -81,6 +83,7 @@ function ProductShowcase () {
                     ""
                 }
             </div>
+            <ButtonPrimary text="Ver todos" styleClass={styles.__showcase__see} url="/produtos" />
         </section>
     );
 }

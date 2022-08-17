@@ -1,6 +1,6 @@
 .home {
     width: 100%;
-    margin-top: -4px;
+    margin-top: 138px;
 }
 .__carousel {
     &__wrap {
@@ -14,14 +14,16 @@
     &__desc {
         width: 375px;
         position: absolute;
-        top: 119px;
+        top: 50%;
         left: 144px;
+        transform: translateY(-50%);
     }
     &__text {
         font-weight: 800;
         font-size: 40px;
         line-height: 60px;
         color: #fff;
+        margin: 0;
     }
     &__button {
         width: 131px;

@@ -28,6 +28,8 @@ function BlogCarousel ({
             onSwiper={(swiper) => console.log(swiper)}
             modules={[Navigation]}
             className={styles.__carousel}
+            id="blogCarousel"
+            navigation={true}
         >
             {   
             blogArticles !== null 

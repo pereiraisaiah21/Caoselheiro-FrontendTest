@@ -17,12 +17,12 @@ function AnnouncementPartner () {
     const announcementImages = [
         {
             image : Annuon,
-            description : "As melhores guias para os melhorespasseios",
+            description : "As melhores guias para os melhores passeios",
             url : "/Announ"
         },
         {
             image : Annuon,
-            description : "As melhores guias para os melhorespasseios",
+            description : "As melhores guias para os melhores passeios",
             url : "/Announ"
         },
     ]

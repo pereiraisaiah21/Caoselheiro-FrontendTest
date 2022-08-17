@@ -24,7 +24,7 @@ function AnnouncementPartnerCarousel ({
             slidesPerView={1}
             onSlideChange={() => console.log('slide change')}
             onSwiper={(swiper) => console.log(swiper)}
-            modules={[Navigation]}
+            navigation={true}
             className={styles.__carousel}
         >
             {

@@ -15,6 +15,7 @@ function ProductListing ({
 }) {
 
     return (
+        
         <li>
             <a className={styles.__item__box}>
                 <figure className={styles.__item__favorite}>
@@ -52,7 +53,7 @@ function ProductListing ({
                 </figure>
             </a>
         </li>
-    )
+    );
 }
 
 export default ProductListing;

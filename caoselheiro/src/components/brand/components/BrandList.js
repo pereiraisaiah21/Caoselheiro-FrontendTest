@@ -3,6 +3,7 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Pagination, A11y } from 'swiper';
 
 import SectionTitle from "../../titles/components/SectionTitle";
+import ButtonPrimary from "../../button/ButtonPrimary";
 
 import styles from "../Brand.module.scss";
 import 'swiper/css';
@@ -57,17 +58,20 @@ function BrandList () {
     return (
 
         <section className={styles.__brand}>
-            <div>
-            <SectionTitle description="Principais marcas" />
+            <div className={styles.__brand__info}>
+                <SectionTitle description="Principais marcas" />
+                <ButtonPrimary text="Ver todos" styleClass={styles.__brand__see} url="/brands" />
             </div>
             <div>
                 <Swiper
                     modules={[Navigation]}
+                    navigation={true}
                     spaceBetween={10}
                     slidesPerView={6}
                     onSlideChange={() => console.log('slide change')}
                     onSwiper={(swiper) => console.log(swiper)}
                     className={styles.__brand__carousel}
+                    id="brandCarousel"
                 >
                     {   
                         brandsData.map( ( brand, key ) => {

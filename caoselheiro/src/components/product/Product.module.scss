@@ -41,6 +41,13 @@
         display: flex;
         flex-wrap: wrap;
     }
+    &__see {
+        color: #FBB900;
+        width: 100%;
+        text-decoration: underline;
+        display: block;
+        text-align: center;
+    }
     &__info {
         display: flex;
         flex-wrap: nowrap;

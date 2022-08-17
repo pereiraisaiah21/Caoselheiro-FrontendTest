@@ -25,6 +25,8 @@ function ProductCarousel ({
             onSlideChange={() => console.log('slide change')}
             onSwiper={(swiper) => console.log(swiper)}
             modules={[Navigation]}
+            navigation={true}
+            id="productCarousel"
             className={styles.__showcase__carousel}
         >
             {

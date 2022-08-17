@@ -24,6 +24,8 @@ function ProductCarouselCategories ({
             onSwiper={(swiper) => console.log(swiper)}
             modules={[Navigation]}
             className={styles.__showcase__info__carousel}
+            navigation={true}
+            id="productCategoriesCarousel"
         >
             {
                 categories !== null

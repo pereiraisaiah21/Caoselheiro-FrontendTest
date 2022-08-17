@@ -22,7 +22,7 @@ function HomeBanners () {
             slidesPerView={1}
             onSlideChange={() => console.log('slide change')}
             onSwiper={(swiper) => console.log(swiper)}
-            modules={[Navigation]}
+            navigation={true} modules={[Navigation]}
             className={styles.__carousel__wrap}
         >
             <SwiperSlide className={styles.__carousel__item}>
@@ -31,7 +31,7 @@ function HomeBanners () {
                     parentClass={styles.__carousel__desc}
                     textClass={styles.__carousel__text}
                     buttonClass={styles.__carousel__button}
-                    textContent="As melhores guias para os melhorespasseios"
+                    textContent="As melhores guias para os melhores passeios"
                     buttonContent="CONFIRA"
                 />
             </SwiperSlide>
@@ -41,7 +41,7 @@ function HomeBanners () {
                     parentClass={styles.__carousel__desc}
                     textClass={styles.__carousel__text}
                     buttonClass={styles.__carousel__button}
-                    textContent="As melhores guias para os melhorespasseios"
+                    textContent="As melhores guias para os melhores passeios"
                     buttonContent="CONFIRA"
                 />
             </SwiperSlide>

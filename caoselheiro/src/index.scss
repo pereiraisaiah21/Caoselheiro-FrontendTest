@@ -26,6 +26,53 @@ a {
   box-sizing: border-box;
 }
 
+#productCategoriesCarousel {
+  padding: 0 20px;
+  &.swiper {
+    .swiper-button-prev {
+      left: -10px;
+    }
+    .swiper-button-next {
+      right: 10px;
+    }
+    .swiper-button-prev,
+    .swiper-button-next {
+      border-radius: 50px;
+      width: 32px;
+      top: 25px;
+      height: 32px;
+      z-index: 10;
+      &:after {
+        font-size: 15px !important;
+        color: #FBB900;
+        font-weight: 700;
+        padding: 2px;
+      }
+    }
+  }
+}
+#productCarousel,
+#brandCarousel,
+#blogCarousel {
+  &.swiper {
+    .swiper-button-prev,
+    .swiper-button-next {
+      border-radius: 50px;
+      width: 32px;
+      height: 32px;
+      padding: 6px 4px 6px 2px;
+      box-shadow: inset 0px 0px 5px rgb(129, 126, 126);
+      z-index: 10;
+      &:after {
+        font-size: 15px !important;
+        color: black;
+        font-weight: 700;
+        padding: 2px;
+      }
+    }
+  }
+}
+
 #partners {
   display: block;
   font-weight: 700;

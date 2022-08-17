@@ -61,6 +61,7 @@ function ProductCategories () {
                     slidesPerView={4}
                     onSlideChange={() => console.log('slide change')}
                     onSwiper={(swiper) => console.log(swiper)}
+                    navigation={true}
                 >
                     {
                         categories.map( ( category, key ) => {
