@@ -7,21 +7,35 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 import AnnouncementPartnerListing from "./AnnouncementPartnerListing";
 
-function AnnouncementPartnerCarousel () {
+/**
+ * 
+ * @param {*} param0 
+ * @returns 
+ */
+
+function AnnouncementPartnerCarousel ({
+    announcementImages
+}) {
 
     return (
 
         <Swiper
-            spaceBetween={50}
+            spaceBetween={10}
             slidesPerView={1}
             onSlideChange={() => console.log('slide change')}
             onSwiper={(swiper) => console.log(swiper)}
             modules={[Navigation]}
             className={styles.__carousel}
         >
-            <SwiperSlide className="">
-                <AnnouncementPartnerListing />
-            </SwiperSlide>
+            {
+                announcementImages.map( ( image, key ) => {
+                    return (
+                        <SwiperSlide className="" key={key}>
+                            <AnnouncementPartnerListing image={image} />
+                        </SwiperSlide>
+                    )
+                })
+            }
         </Swiper>
     );
 }

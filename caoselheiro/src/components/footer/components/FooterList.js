@@ -9,6 +9,7 @@ import Bullet from "../../../images/footer/cards/bullet.png";
 import Diners from "../../../images/footer/cards/diners.png";
 import Amex from "../../../images/footer/cards/amex.png";
 import Lets from "../../../images/footer/lets.png";
+import Phone from "../../../images/footer/phone.png"
 
 import styles from "../Footer.module.scss";
 
@@ -27,7 +28,8 @@ function FooterList () {
                     description : "PARCEIROS",
                     url : "",
                     icon : "",
-                    image : ""
+                    image : "",
+                    id : "partners"
                 }
             ]
         },
@@ -78,7 +80,7 @@ function FooterList () {
                 {
                     description : "(11) 97212 - 1314",
                     url : "",
-                    icon : "",
+                    icon : Phone,
                     image : ""
                 },
                 {
@@ -102,37 +104,43 @@ function FooterList () {
                     description : "Elo",
                     url : "",
                     icon : "",
-                    image : Elo
+                    image : Elo,
+                    id : "elo"
                 },
                 {
                     description : "vISA",
                     url : "",
                     icon : "",
-                    image : Visa
+                    image : Visa,
+                    id : "visa"
                 },
                 {
                     description : "mASTER",
                     url : "",
                     icon : "",
-                    image : Master
+                    image : Master,
+                    id : "master"
                 },
                 {
                     description : "BOLETO",
                     url : "",
                     icon : "",
-                    image : Bullet
+                    image : Bullet,
+                    id : "bullet"
                 },
                 {
                     description : "dINNERS",
                     url : "",
                     icon : "",
-                    image : Diners
+                    image : Diners,
+                    id : "dinner"
                 },
                 {
                     description : "aMEX",
                     url : "",
                     icon : "",
-                    image : Amex
+                    image : Amex,
+                    id : "amex"
                 },
             ],
             style : " img"
@@ -144,7 +152,8 @@ function FooterList () {
                     description : "Lets Encrypt",
                     url : "",
                     icon : "",
-                    image : Lets
+                    image : Lets,
+                    id : "lets"
                 }
             ],
             style : " img"

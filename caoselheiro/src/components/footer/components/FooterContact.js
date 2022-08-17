@@ -21,11 +21,11 @@ function FooterContact () {
                 <li className={styles.__contact__item}>© Todos os direitos reservados. 2021</li>
             </ul>
             <div className={styles.__contact__itemImage}>
-                <a className="" href="" title="">
-                    <img alt="" className="" src={Econverse} />
+                <a className={styles.__contact__anchor} href="" title="">
+                    <img alt="" className={styles.__contact__image} src={Econverse} />
                 </a>
-                <a className="" href="" title="">
-                    <img alt="" className="" src={Vtex} />
+                <a className={styles.__contact__anchor} href="" title="">
+                    <img alt="" className={styles.__contact__image} src={Vtex} />
                 </a>
             </div>
         </div>

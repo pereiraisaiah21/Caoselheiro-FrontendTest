@@ -20,17 +20,17 @@ function FooterFollowUs () {
             <ul className={styles.__social__list}>
                 <li className={styles.__social__item}>
                     <a className={styles.__social__anchor}>
-                        <img alt="" className="" src={Facebook} />
+                        <img alt="" className={styles.__social__icon} src={Facebook} />
                     </a>
                 </li>
                 <li className={styles.__social__item}>
                     <a className={styles.__social__anchor}>
-                        <img alt="" className="" src={Instagram} />
+                        <img alt="" className={styles.__social__icon} src={Instagram} />
                     </a>
                 </li>
                 <li className={styles.__social__item}>
                     <a className={styles.__social__anchor}>
-                        <img alt="" className="" src={Youtube} />
+                        <img alt="" className={styles.__social__icon} src={Youtube} />
                     </a>
                 </li>
             </ul>
