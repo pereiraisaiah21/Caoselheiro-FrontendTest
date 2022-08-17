@@ -1,11 +1,12 @@
 import React from "react";
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { Navigation } from "swiper";
+import { Pagination } from "swiper";
+
+import AnnouncementPartnerListing from "./AnnouncementPartnerListing";
 
 import styles from "../Announcement.module.scss";
 import 'swiper/css';
-import 'swiper/css/navigation';
-import AnnouncementPartnerListing from "./AnnouncementPartnerListing";
+import 'swiper/css/pagination';
 
 /**
  * 
@@ -21,11 +22,14 @@ function AnnouncementPartnerCarousel ({
 
         <Swiper
             spaceBetween={10}
+            modules={[Pagination]}
             slidesPerView={1}
             onSlideChange={() => console.log('slide change')}
             onSwiper={(swiper) => console.log(swiper)}
-            navigation={true}
+            pagination={{ clickable: true }}
             className={styles.__carousel}
+            loop={true}
+            id="announcementCarousel"
         >
             {
                 announcementImages.map( ( image, key ) => {

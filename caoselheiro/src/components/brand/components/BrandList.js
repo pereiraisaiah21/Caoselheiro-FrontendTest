@@ -66,12 +66,13 @@ function BrandList () {
                 <Swiper
                     modules={[Navigation]}
                     navigation={true}
-                    spaceBetween={10}
-                    slidesPerView={6}
+                    spaceBetween={(window.innerWidth < 768) ? 5 : 16}
+                    slidesPerView={(window.innerWidth < 768) ? 1 : 6}
                     onSlideChange={() => console.log('slide change')}
                     onSwiper={(swiper) => console.log(swiper)}
                     className={styles.__brand__carousel}
                     id="brandCarousel"
+                    loop={true}
                 >
                     {   
                         brandsData.map( ( brand, key ) => {
@@ -87,7 +88,7 @@ function BrandList () {
                 </Swiper>
             </div>
         </section>
-    )
+    );
 }
 
 export default BrandList;

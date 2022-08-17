@@ -33,7 +33,7 @@ a {
       left: -10px;
     }
     .swiper-button-next {
-      right: 10px;
+      right: -2px;
     }
     .swiper-button-prev,
     .swiper-button-next {
@@ -43,31 +43,53 @@ a {
       height: 32px;
       z-index: 10;
       &:after {
-        font-size: 15px !important;
+        font-size: 12px !important;
         color: #FBB900;
         font-weight: 700;
-        padding: 2px;
+        padding: 7px 1px 8px 2px;
       }
     }
   }
 }
+#productCarousel {
+  .swiper-wrapper {
+    padding: 0 0 50px;
+  }
+  .swiper-pagination {
+    //margin-bottom: -30px;
+  }
+}
+#announcementCarousel {
+  // padding: 30px 0 30px;
+}
 #productCarousel,
+#categoriesCarousel,
 #brandCarousel,
 #blogCarousel {
   &.swiper {
+    .swiper-pagination-bullet-active {
+      background: rgb(110, 110, 110);
+    }
+    .swiper-button-prev {
+      margin-left: -10px;
+    }
+    .swiper-button-mext {
+      margin-right: -10px;
+    }
     .swiper-button-prev,
     .swiper-button-next {
       border-radius: 50px;
       width: 32px;
       height: 32px;
       padding: 6px 4px 6px 2px;
-      box-shadow: inset 0px 0px 5px rgb(129, 126, 126);
+      box-shadow: inset 0px -2px 4px rgb(251 204 243);
+      background-color: #FFF;
       z-index: 10;
       &:after {
-        font-size: 15px !important;
+        font-size: 12px !important;
         color: black;
         font-weight: 700;
-        padding: 2px;
+        padding: 7px 1px 8px 2px;
       }
     }
   }

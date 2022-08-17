@@ -57,11 +57,12 @@ function ProductCategories () {
             <div>
                 <Swiper
                     modules={[Navigation, Pagination, A11y]}
-                    spaceBetween={20}
-                    slidesPerView={4}
+                    spaceBetween={(window.innerWidth < 768) ? 10 : 16}
+                    slidesPerView={(window.innerWidth < 768) ? 1 : 4}
                     onSlideChange={() => console.log('slide change')}
                     onSwiper={(swiper) => console.log(swiper)}
                     navigation={true}
+                    id="categoriesCarousel"
                 >
                     {
                         categories.map( ( category, key ) => {

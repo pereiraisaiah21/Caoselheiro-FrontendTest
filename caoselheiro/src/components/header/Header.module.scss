@@ -1,5 +1,5 @@
 .header {
-    height: 144px;
+    height: 120px;
     position: relative;
     border-radius: 0 0 10px 10px;
     position: absolute;
@@ -28,7 +28,7 @@
         color: #9F9F9F;
         font-size: 12px;
         line-height: 18px;
-        display: flex;
+        display: none;
         align-items: center;
     }
     &__image {
@@ -44,6 +44,7 @@
 
 .__scope {
     display: flex;
+    justify-content: center;
     width: 100%;
     max-width: 1280px;
     margin: 0 auto;
@@ -51,17 +52,17 @@
     border-bottom: 1px solid #ccc;
     padding: 10px;
     &__lg {
-        width: 25%;
+        width: 40%;
         text-align: center;
         img {
-            width: 178px;
+            width: 100%;
         }
     }
     &__sr {
-        display: inline-flex;
+        display: none;
         align-items: center;
         flex-grow: 1;
-        max-width: 657px;
+        max-width: 50%;
         &__form {
             display: flex;
             justify-content: space-between;
@@ -95,7 +96,7 @@
     }
     &__op {
         width: 20%;
-        display: inline-flex;
+        display: none;
         justify-content: flex-end;
         align-items: center;
         &__icon {
@@ -148,3 +149,46 @@
         }
     }
 }
+
+@media (max-width: 575px) {
+    .__menu {
+        display: none;
+    }
+}
+// Sm
+@media (min-width: 576px) {}
+// Md
+@media (min-width: 768px) {
+    .header {
+        height: 144px;
+    }
+    .__adv {
+        &__list {
+            &__item {
+                display: flex;
+            }
+        }
+    }
+    .__scope {
+        justify-content: unset;
+        &__lg {
+            width: 25%;
+            img {
+                width: 178px;
+            }
+        }
+        &__sr {
+            display: inline-flex;
+            max-width: 657px;
+        }
+        &__op {
+            display: inline-flex;
+        }
+    }
+}
+// Lg
+@media (min-width: 991px) {}
+// Xl
+@media (min-width: 1200px) {}
+// Xxl
+@media (min-width: 1400px) {}

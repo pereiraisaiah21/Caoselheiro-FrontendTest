@@ -8,7 +8,7 @@
         background-size: contain;
         background-position: center;
         height: 204px;
-        width: 500px;
+        width: 100%;
         margin: 0 auto;
     }
     &__form {
@@ -81,3 +81,23 @@
         justify-content: center;
     }
 }
+
+
+@media (max-width: 575px) {
+}
+// Sm
+@media (min-width: 576px) {}
+// Md
+@media (min-width: 768px) {
+    .__news {
+        &__img {
+            width: 500px;
+        }
+    }
+}
+// Lg
+@media (min-width: 991px) {}
+// Xl
+@media (min-width: 1200px) {}
+// Xxl
+@media (min-width: 1400px) {}

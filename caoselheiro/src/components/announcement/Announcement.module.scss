@@ -4,26 +4,29 @@
     max-width: 1280px;
     margin: auto;
     display: flex;
+    flex-wrap: wrap;
     padding: 100px 0 0;
 }
 
 .__box {
-    width: 50%;
-    padding: 0 40px;
+    width: 100%;
+    padding: 0 10px;
 }
 .__carousel {
     position: relative;
+    padding: 12px 0 0;
     &__fig {
         width: inherit;
         margin: 0;
     }
     &__image {
         width: 100%;
+        height: 250px;
         border-radius: 20px;
     }
     &__desc {
         position: absolute;
-        bottom: 50px;
+        bottom: 35px;
         left: 60px;
     }
     &__text {
@@ -53,17 +56,22 @@
     }
 }
 .__signature {
-    width: 50%;
+    width: 100%;
+    height: 350px;
+    padding: 0 0 18px;
     &__box {
         background-color: #FEF6E7;
         position: relative;
         width: 100%;
         height: 100%;
-        border-radius: 20px;
+        padding: 0 0 30px;
+        border-radius: 0;
+        padding: 10px 0 0;
+        margin: 30px 0 0;
     }
     &__image {
         position: absolute;
-        bottom: 0;
+        bottom: -10px;
         right: 0;
         height: 120%;
     }
@@ -96,3 +104,45 @@
 
 .__post {
 }
+
+
+@media (max-width: 575px) {
+}
+// Sm
+@media (min-width: 576px) {}
+// Md
+@media (min-width: 768px) {
+    .__wrap {
+        flex-wrap: nowrap;
+    }
+    .__box {
+        padding: 0 40px;
+    }
+    .__signature {
+        width: 50%;
+        height: unset;
+        &__box {
+            padding: unset;
+            border-radius: 20px;
+            margin: unset;
+        }
+    }
+    .__box {
+        width: 50%;
+    }
+    .__carousel {
+        &__image {
+            height: unset;
+        }
+        &__desc {
+            bottom: 35px;
+            bottom: 50px;
+        }
+    }
+}
+// Lg
+@media (min-width: 991px) {}
+// Xl
+@media (min-width: 1200px) {}
+// Xxl
+@media (min-width: 1400px) {}

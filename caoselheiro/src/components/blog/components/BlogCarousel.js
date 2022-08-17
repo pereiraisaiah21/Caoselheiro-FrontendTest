@@ -23,13 +23,12 @@ function BlogCarousel ({
 
         <Swiper
             spaceBetween={10}
-            slidesPerView={4}
-            onSlideChange={() => console.log('slide change')}
-            onSwiper={(swiper) => console.log(swiper)}
+            slidesPerView={(window.innerWidth < 768) ? 1 : 4}
             modules={[Navigation]}
             className={styles.__carousel}
             id="blogCarousel"
             navigation={true}
+            loop={true}
         >
             {   
             blogArticles !== null 

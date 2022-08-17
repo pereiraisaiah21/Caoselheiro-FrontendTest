@@ -8,7 +8,7 @@
 
 .__carousel {
     &__item {
-        width: 277px;
+        width: unset;
         height: 277px;
         overflow: hidden;
         border-radius: 20px;
@@ -34,7 +34,7 @@
 }
 
 .__showcase {
-    max-width: 1280px;
+    max-width: calc(1280px + 100px);
     margin: auto;
     padding: 80px 40px 0 40px;
     &__wrap {
@@ -47,19 +47,21 @@
         text-decoration: underline;
         display: block;
         text-align: center;
+        margin-top: -60px;
     }
     &__info {
         display: flex;
-        flex-wrap: nowrap;
+        flex-wrap: wrap;
         width: 100%;
         &__name {
             width: 40%;
         }
         &__categories {
-            width: 60%;
+            width: 100%;
             display: inline-flex;
             align-items: center;
             justify-content: flex-end;
+            margin: 10px 0 20px;
         }
         &__carousel {
             display: flex;
@@ -67,11 +69,11 @@
         &__button {
             border: none;
             color: #9F9F9F;
+            width: 100%;
             font-weight: 700;
             line-height: 21px;
             border: 1px solid #E5E5E5;
             padding: 0 10px;
-            width: inherit;
             background-color: unset;
             height: 40px;
             white-space: nowrap;
@@ -193,3 +195,32 @@
         border-radius: 10px;
     }
 }
+
+
+@media (max-width: 575px) {
+}
+// Sm
+@media (min-width: 576px) {}
+// Md
+@media (min-width: 768px) {
+    .__carousel {
+        &__item {
+            width: 277px;
+        }
+    }
+    .__showcase {
+        &__info {
+            flex-wrap: nowrap;
+            &__categories {
+                width: 60%;
+                margin: unset;
+            }
+        }
+    }
+}
+// Lg
+@media (min-width: 991px) {}
+// Xl
+@media (min-width: 1200px) {}
+// Xxl
+@media (min-width: 1400px) {}

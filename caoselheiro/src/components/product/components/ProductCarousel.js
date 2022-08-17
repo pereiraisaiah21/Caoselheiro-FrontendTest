@@ -1,12 +1,13 @@
 import React from "react";
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { Navigation } from "swiper";
+import { Navigation, Pagination } from "swiper";
 
 import ProductListing from "./ProductListing";
 
 import styles from "../Product.module.scss";
 import 'swiper/css';
 import 'swiper/css/navigation';
+import 'swiper/css/pagination';
 
 /**
  * 
@@ -21,10 +22,12 @@ function ProductCarousel ({
     return (
         <Swiper
             spaceBetween={20}
-            slidesPerView={4}
+            slidesPerView={(window.innerWidth < 768) ? 1 : 4}
             onSlideChange={() => console.log('slide change')}
             onSwiper={(swiper) => console.log(swiper)}
-            modules={[Navigation]}
+            modules={[Navigation, Pagination]}
+            pagination={{ clickable: true }}
+            loop={true}
             navigation={true}
             id="productCarousel"
             className={styles.__showcase__carousel}

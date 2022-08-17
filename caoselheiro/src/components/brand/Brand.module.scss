@@ -3,7 +3,7 @@
 .__brand {
     max-width: 1280px;
     margin: auto;
-    padding: 20px 40px 0 40px;
+    padding: 80px 40px 0 40px;
     &__info {
         display: flex;
         justify-content: space-between;
@@ -32,3 +32,23 @@
         }
     }
 }
+
+@media (max-width: 575px) {
+}
+// Sm
+@media (min-width: 576px) {}
+// Md
+@media (min-width: 768px) {
+    .__brand {
+        padding: 20px 40px 0 40px;
+        &__info {
+            flex-wrap: nowrap;
+        }
+    }
+}
+// Lg
+@media (min-width: 991px) {}
+// Xl
+@media (min-width: 1200px) {}
+// Xxl
+@media (min-width: 1400px) {}

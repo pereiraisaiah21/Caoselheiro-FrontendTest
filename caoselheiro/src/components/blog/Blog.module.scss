@@ -1,7 +1,7 @@
 .blog {
     max-width: 1200px;
     margin: 0 auto;
-    padding: 80px 0 0;
+    padding: 80px 40px 0;
     &__info {
 
     }
@@ -53,3 +53,20 @@
         justify-content: center;
     }
 }
+
+@media (max-width: 575px) {
+}
+// Sm
+@media (min-width: 576px) {}
+// Md
+@media (min-width: 768px) {
+    .blog {
+        padding: 80px 0 0;
+    }
+}
+// Lg
+@media (min-width: 991px) {}
+// Xl
+@media (min-width: 1200px) {}
+// Xxl
+@media (min-width: 1400px) {}
