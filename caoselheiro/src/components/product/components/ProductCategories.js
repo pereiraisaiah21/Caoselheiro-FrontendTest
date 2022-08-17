@@ -56,11 +56,11 @@ function ProductCategories () {
             </div>
             <div>
                 <Swiper
+                    modules={[Navigation, Pagination, A11y]}
                     spaceBetween={20}
                     slidesPerView={4}
                     onSlideChange={() => console.log('slide change')}
                     onSwiper={(swiper) => console.log(swiper)}
-                    modules={[Navigation, Pagination, A11y]}
                 >
                     {
                         categories.map( ( category, key ) => {

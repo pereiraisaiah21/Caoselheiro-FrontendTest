@@ -2,7 +2,15 @@
 
 }
 
-.__wrap {}
+.__wrap {
+    max-width: 1280px;
+    margin: auto;
+    padding: 0 40px;
+}
+.__wrapImage {
+    max-width: 1600px;
+    margin: auto;
+}
 .__carousel {
     &__item {
         width: inherit;

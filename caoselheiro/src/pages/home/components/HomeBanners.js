@@ -35,6 +35,16 @@ function HomeBanners () {
                     buttonContent="CONFIRA"
                 />
             </SwiperSlide>
+            <SwiperSlide className={styles.__carousel__item}>
+                <div className={styles.__carousel__image} style={{background : `url(${Banner01})`}}/>
+                <BannerDescription 
+                    parentClass={styles.__carousel__desc}
+                    textClass={styles.__carousel__text}
+                    buttonClass={styles.__carousel__button}
+                    textContent="As melhores guias para os melhorespasseios"
+                    buttonContent="CONFIRA"
+                />
+            </SwiperSlide>
         </Swiper>
     )
 }

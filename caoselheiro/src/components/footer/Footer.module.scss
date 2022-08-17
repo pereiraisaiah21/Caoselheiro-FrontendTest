@@ -1,4 +1,51 @@
-.footer {}
-.__wrap {}
-.__social {}
-.__options {}
+.footer {
+    background-color: #FBB900;
+}
+.__wrap {
+    max-width: 1280px;
+    display: grid;
+    grid-template: "sc op op" "sc op op" "sc op op" / 40% 60%;
+}
+.__social {
+    grid-area: sc;
+    border-right: 1px solid #FFF;
+    padding: 0 50px;
+    text-align: center;
+    &__box {}
+    &__about {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 21px;
+        color: #FFF;
+    }
+}
+.__options {
+    grid-area: op;
+    &__list {}
+    &__title {
+        color: #FFF;
+        font-size: 20px;
+        line-height: 30px;
+    }
+    &__item {
+        color: #FFF;
+        font-size: 21px;
+        font-weight: 500;
+        line-height: 21px;
+    }
+    &__imageBox {
+        height: 38px;
+        width: 66px;
+        background-color: #FFF;
+        border-radius: 10px;
+        vertical-align: center;
+    }
+    &__image {
+        border-radius: 10px;
+        max-width: 100%;
+    }
+}
+
+.__contact {
+    border-top: 1px solid #FFF;
+}

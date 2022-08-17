@@ -1,4 +1,6 @@
-.news {}
+.news {
+    margin: 0 0 80px;
+}
 
 .__news {
     &__img {
@@ -10,33 +12,57 @@
         margin: 0 auto;
     }
     &__form {
-        max-width: 600px;
+        max-width: 700px;
         margin: auto;
         background-color: #FEF6E7;
         border-radius: 20px;
-        padding: 30px 0;
-        text-align: center;
+        padding: 30px 40px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
         &__title {
             font-weight: 700;
             font-size: 24px;
+            font-style: normal;
             line-height: 36px;
             font-style: bold;
-            margin: 0;
+            width: 380px;
+            color: #4D4D4D;
+            text-align: center;
+            margin: 0 auto 30px;
         }
     }
     &__box {
+        position: relative;
         padding: 0;
         border: none;
         height: 48px;
         margin-bottom: 10px;
+        width: 350px;
         text-align: center;
         &__input {
             height: 100%;
+            width: 100%;
             background-color: #FFF; 
             border: 1px solid #E5E5E5;
             border: none;
             border-radius: 10px;
+            padding: 0 0 0 50px;
         }
+        &__icon {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            width: 28px;
+            height: 28px;
+        }
+    }
+    &__send {
+        width: 100%;
+        margin: 0;
+        border: none;
+        text-align: center;
+        padding: 30px 0 0;
     }
     &__button {
         background-color: #FBB900;

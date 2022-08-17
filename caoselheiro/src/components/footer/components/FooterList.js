@@ -2,6 +2,13 @@ import React from "react";
 
 import FooterListPages from "./FooterListPages";
 
+import Elo from "../../../images/footer/cards/elo.png";
+import Visa from "../../../images/footer/cards/visa.png";
+import Master from "../../../images/footer/cards/master.png";
+import Bullet from "../../../images/footer/cards/bullet.png";
+import Diners from "../../../images/footer/cards/diners.png";
+import Amex from "../../../images/footer/cards/amex.png";
+
 import styles from "../Footer.module.scss";
 
 /**
@@ -13,22 +20,129 @@ function FooterList () {
 
     const footerLists = [
         {
-            nameSection : "Seção 01",
+            nameSection : "ASSINATURA",
             pages : [
                 {
                     description : "Pagina",
                     url : "",
-                    icon : ""
+                    icon : "",
+                    image : ""
                 }
             ]
         },
         {
-            nameSection : "Seção 01",
+            nameSection : "INSTITUCIONAL",
             pages : [
                 {
-                    description : "Pagina",
+                    description : "Quem somos",
                     url : "",
-                    icon : ""
+                    icon : "",
+                    image : ""
+                },
+                {
+                    description : "Política de privacidade",
+                    url : "",
+                    icon : "",
+                    image : ""
+                },
+                {
+                    description : "Política comercial",
+                    url : "",
+                    icon : "",
+                    image : ""
+                },
+                {
+                    description : "Política de devolução",
+                    url : "",
+                    icon : "",
+                    image : ""
+                },
+                {
+                    description : "Regras de frete",
+                    url : "",
+                    icon : "",
+                    image : ""
+                },
+            ]
+        },
+        {
+            nameSection : "ATENDIMENTO",
+            pages : [
+                {
+                    description : "Fale conosco",
+                    url : "",
+                    icon : "",
+                    image : ""
+                },
+                {
+                    description : "(11) 97212 - 1314",
+                    url : "",
+                    icon : "",
+                    image : ""
+                },
+                {
+                    description : "ocaoselheiro@ocaoselheiro.com.br",
+                    url : "",
+                    icon : "",
+                    image : ""
+                },
+                {
+                    description : "Trabalhe conosco",
+                    url : "",
+                    icon : "",
+                    image : ""
+                },
+            ]
+        },
+        {
+            nameSection : "FORMAS DE PAGAMENTO",
+            pages : [
+                {
+                    description : "Elo",
+                    url : "",
+                    icon : "",
+                    image : Elo
+                },
+                {
+                    description : "vISA",
+                    url : "",
+                    icon : "",
+                    image : Visa
+                },
+                {
+                    description : "mASTER",
+                    url : "",
+                    icon : "",
+                    image : Master
+                },
+                {
+                    description : "BOLETO",
+                    url : "",
+                    icon : "",
+                    image : Bullet
+                },
+                {
+                    description : "dINNERS",
+                    url : "",
+                    icon : "",
+                    image : Diners
+                },
+                {
+                    description : "aMEX",
+                    url : "",
+                    icon : "",
+                    image : Amex
+                },
+            ]
+        },
+        {
+            nameSection : "SEGURANÇA",
+            pages : [
+                {
+                    description : "Lets Encrypt",
+                    url : "",
+                    icon : "",
+                    image : ""
                 }
             ]
         }
@@ -36,12 +150,12 @@ function FooterList () {
 
     return (
 
-        <div className={"styles.footer"}>
+        <div className={""}>
         {
             footerLists.map( ( section, key ) => {
                 return (
-                    <ul key={key}>
-                        <span>
+                    <ul className={styles.__options__list} key={key}>
+                        <span className={styles.__options__title}>
                             {section.nameSection}
                         </span>
                         <FooterListPages pages={section.pages} />

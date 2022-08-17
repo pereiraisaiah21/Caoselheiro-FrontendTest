@@ -20,10 +20,20 @@ function FooterListPages ({
                 ?
                 pages.map( ( page, key ) => {
                     return (
-                        <li key={key}>
+                        <li className={styles.__options__item} key={key}>
                             <a className="" href={page.url} title="">
-                                <img alt="" className="" src={page.icon} />
-                                {page.description}
+                            {
+                                page.image
+                                ?
+                                <div className={styles.__options__imageBox}>
+                                    <img alt="" className={styles.__options__image} src={page.image} />
+                                </div>
+                                :
+                                <>
+                                    <img alt="" className="" src={page.icon} />
+                                    {page.description}
+                                </>    
+                                }
                             </a>
                         </li>
                     )

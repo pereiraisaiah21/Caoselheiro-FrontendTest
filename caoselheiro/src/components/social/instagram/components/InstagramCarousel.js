@@ -4,6 +4,13 @@ import { Navigation } from "swiper";
 
 import InstagramListing from "./InstagramListing";
 
+import Post01 from "../../../../images/instagram/post01.png";
+import Post02 from "../../../../images/instagram/post02.png";
+import Post03 from "../../../../images/instagram/post03.png";
+import Post04 from "../../../../images/instagram/post04.png";
+import Post05 from "../../../../images/instagram/post05.png";
+import Post06 from "../../../../images/instagram/post06.png";
+
 import styles from "../Instagram.module.scss";
 import 'swiper/css';
 import 'swiper/css/navigation';
@@ -12,29 +19,29 @@ function InstgramCarousel () {
 
     const instagramImages =[
         {
-            src : "https://st2.depositphotos.com/1005147/5192/i/450/depositphotos_51926417-stock-photo-hands-holding-the-sun-at.jpg"
+            src : Post01
         },
         {
-            src : "https://st2.depositphotos.com/1005147/5192/i/450/depositphotos_51926417-stock-photo-hands-holding-the-sun-at.jpg"
+            src : Post02
         },
         {
-            src : "https://st2.depositphotos.com/1005147/5192/i/450/depositphotos_51926417-stock-photo-hands-holding-the-sun-at.jpg"
+            src : Post03
         },
         {
-            src : "https://st2.depositphotos.com/1005147/5192/i/450/depositphotos_51926417-stock-photo-hands-holding-the-sun-at.jpg"
+            src : Post04
         },
         {
-            src : "https://st2.depositphotos.com/1005147/5192/i/450/depositphotos_51926417-stock-photo-hands-holding-the-sun-at.jpg"
+            src : Post05
         },
         {
-            src : "https://st2.depositphotos.com/1005147/5192/i/450/depositphotos_51926417-stock-photo-hands-holding-the-sun-at.jpg"
+            src : Post06
         },
     ]
 
     return (
 
         <Swiper
-            spaceBetween={0}
+            spaceBetween={-30}
             slidesPerView={5}
             onSlideChange={() => console.log('slide change')}
             onSwiper={(swiper) => console.log(swiper)}

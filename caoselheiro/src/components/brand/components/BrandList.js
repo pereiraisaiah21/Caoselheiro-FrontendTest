@@ -1,12 +1,14 @@
 import React from "react";
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { Navigation } from "swiper";
+import { Navigation, Pagination, A11y } from 'swiper';
 
 import SectionTitle from "../../titles/components/SectionTitle";
 
 import styles from "../Brand.module.scss";
 import 'swiper/css';
 import 'swiper/css/navigation';
+import 'swiper/css/pagination';
+import 'swiper/css/scrollbar';
 /**
  * 
  * @returns 
@@ -45,21 +47,26 @@ function BrandList () {
             url : "",
             image : ""
         },
+        {
+            name : "Kong",
+            url : "",
+            image : ""
+        },
     ];
 
     return (
 
-        <section>
+        <section className={styles.__brand}>
             <div>
             <SectionTitle description="Principais marcas" />
             </div>
             <div>
                 <Swiper
-                    spaceBetween={50}
+                    modules={[Navigation]}
+                    spaceBetween={10}
                     slidesPerView={6}
                     onSlideChange={() => console.log('slide change')}
                     onSwiper={(swiper) => console.log(swiper)}
-                    modules={[Navigation]}
                     className={styles.__brand__carousel}
                 >
                     {   

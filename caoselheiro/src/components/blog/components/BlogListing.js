@@ -22,7 +22,7 @@ function BlogListing ({
                     {blogArticle.name}
                 </h5>
                 <p className={styles.__card__description}>
-                    {blogArticle.name}
+                    {blogArticle.description}
                 </p>
                 <button className={styles.__card__button}>
                     Ler artigo

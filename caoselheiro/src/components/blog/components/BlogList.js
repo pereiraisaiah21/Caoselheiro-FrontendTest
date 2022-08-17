@@ -14,26 +14,32 @@ function BlogList () {
     const blogArticlesData = {
         data : [
             {
-                name : "Buddy",
-                description : "Buddy",
+                name : "Lorem ipsum dolor sit amet consectetur.",
+                description : "Lorem ipsum dolor sit amet, consectetur elit adipiscing dignissim posuere vitae.",
                 url : "",
                 image : ""
             },
             {
-                name : "Buddy",
-                description : "Buddy",
+                name : "Lorem ipsum dolor sit amet consectetur.",
+                description : "Lorem ipsum dolor sit amet, consectetur elit adipiscing dignissim posuere vitae.",
                 url : "",
                 image : ""
             },
             {
-                name : "Buddy",
-                description : "Buddy",
+                name : "Lorem ipsum dolor sit amet consectetur.",
+                description : "Lorem ipsum dolor sit amet, consectetur elit adipiscing dignissim posuere vitae.",
                 url : "",
                 image : ""
             },
             {
-                name : "Buddy",
-                description : "Buddy",
+                name : "Lorem ipsum dolor sit amet consectetur.",
+                description : "Lorem ipsum dolor sit amet, consectetur elit adipiscing dignissim posuere vitae.",
+                url : "",
+                image : ""
+            },
+            {
+                name : "Lorem ipsum dolor sit amet consectetur.",
+                description : "Lorem ipsum dolor sit amet, consectetur elit adipiscing dignissim posuere vitae.",
                 url : "",
                 image : ""
             },
