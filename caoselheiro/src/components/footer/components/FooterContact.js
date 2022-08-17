@@ -15,19 +15,19 @@ function FooterContact () {
     return (
 
         <div className={styles.__contact}>
-            <ul>
-                <li>O Cãoselheiro Comércio LTDA</li>
-                <li>CNPJ: 30.324.633/0001-16</li>
-                <li>© Todos os direitos reservados. 2021</li>
-                <li>
-                    <a className="" href="" title="">
-                        <img alt="" className="" src={Econverse} />
-                    </a>
-                    <a className="" href="" title="">
-                        <img alt="" className="" src={Vtex} />
-                    </a>
-                </li>
+            <ul className={styles.__contact__list}>
+                <li className={styles.__contact__item}>O Cãoselheiro Comércio LTDA</li>
+                <li className={styles.__contact__item}>CNPJ: 30.324.633/0001-16</li>
+                <li className={styles.__contact__item}>© Todos os direitos reservados. 2021</li>
             </ul>
+            <div className={styles.__contact__itemImage}>
+                <a className="" href="" title="">
+                    <img alt="" className="" src={Econverse} />
+                </a>
+                <a className="" href="" title="">
+                    <img alt="" className="" src={Vtex} />
+                </a>
+            </div>
         </div>
     )
 }

@@ -5,37 +5,79 @@
     max-width: 1280px;
     display: grid;
     grid-template: "sc op op" "sc op op" "sc op op" / 40% 60%;
+    margin: auto;
 }
 .__social {
     grid-area: sc;
     border-right: 1px solid #FFF;
     padding: 0 50px;
     text-align: center;
-    &__box {}
+    padding-top: 48px;
+    &__box {
+        padding: 50px 25px 0 25px;
+    }
     &__about {
         font-weight: 400;
         font-size: 14px;
         line-height: 21px;
         color: #FFF;
+        padding-top: 30px;
     }
 }
 .__options {
     grid-area: op;
-    &__list {}
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 50px 0px 0;
+    &__list {
+       width: 50%;
+       padding: 32px 10px;
+       div {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        img {
+            width: 90px;
+            height: 60px;
+        }
+       }
+    }
+    &__listImage {
+        width: 30%;
+    }
+    &__box {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding: 0 40px;
+    }
     &__title {
+        display: block;
+        font-weight: 700;
         color: #FFF;
         font-size: 20px;
         line-height: 30px;
+        width: 100%;
+        margin-bottom: 20px;
     }
     &__item {
-        color: #FFF;
         font-size: 21px;
         font-weight: 500;
         line-height: 21px;
     }
+    &__anchor {
+        color: #FFF;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 21px;
+        padding: 7.5px;
+        display: block;
+    }
     &__imageBox {
-        height: 38px;
-        width: 66px;
+        width: 94px;
+        margin-right: 3px;
         background-color: #FFF;
         border-radius: 10px;
         vertical-align: center;
@@ -48,4 +90,16 @@
 
 .__contact {
     border-top: 1px solid #FFF;
+    width: 100%;
+    padding: 40px 40px;
+    display: flex;
+    justify-content: space-between;
+    &__list {
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 18px;
+        color: #FFF;
+    }
+    &__item {}
+    &__itemImage {}
 }

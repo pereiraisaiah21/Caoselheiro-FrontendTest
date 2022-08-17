@@ -8,20 +8,19 @@ import styles from "../Footer.module.scss";
  */
 
 function FooterListPages ({
-    pages
+    pages,
 }) {
-
 
     return (
 
-        <div className={"styles.footer"}>
+        <div className={"style"}>
             {
                 pages !== ""
                 ?
                 pages.map( ( page, key ) => {
                     return (
                         <li className={styles.__options__item} key={key}>
-                            <a className="" href={page.url} title="">
+                            <a className={styles.__options__anchor} href={page.url} title="">
                             {
                                 page.image
                                 ?

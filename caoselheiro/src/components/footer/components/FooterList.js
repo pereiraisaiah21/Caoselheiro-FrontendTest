@@ -8,6 +8,7 @@ import Master from "../../../images/footer/cards/master.png";
 import Bullet from "../../../images/footer/cards/bullet.png";
 import Diners from "../../../images/footer/cards/diners.png";
 import Amex from "../../../images/footer/cards/amex.png";
+import Lets from "../../../images/footer/lets.png";
 
 import styles from "../Footer.module.scss";
 
@@ -23,7 +24,7 @@ function FooterList () {
             nameSection : "ASSINATURA",
             pages : [
                 {
-                    description : "Pagina",
+                    description : "PARCEIROS",
                     url : "",
                     icon : "",
                     image : ""
@@ -133,7 +134,8 @@ function FooterList () {
                     icon : "",
                     image : Amex
                 },
-            ]
+            ],
+            style : " img"
         },
         {
             nameSection : "SEGURANÇA",
@@ -142,24 +144,38 @@ function FooterList () {
                     description : "Lets Encrypt",
                     url : "",
                     icon : "",
-                    image : ""
+                    image : Lets
                 }
-            ]
+            ],
+            style : " img"
         }
     ];
 
     return (
 
-        <div className={""}>
+        <div className={styles.__options__box}>
         {
             footerLists.map( ( section, key ) => {
                 return (
-                    <ul className={styles.__options__list} key={key}>
-                        <span className={styles.__options__title}>
-                            {section.nameSection}
-                        </span>
-                        <FooterListPages pages={section.pages} />
-                    </ul>
+                    <React.Fragment key={key}>
+                        {
+                            section.style !== undefined
+                            ?
+                            <ul className={styles.__options__list} key={key}>
+                                <span className={styles.__options__title}>
+                                    {section.nameSection}
+                                </span>
+                                <FooterListPages pages={section.pages} />
+                            </ul>
+                            :
+                            <ul className={styles.__options__listImage} key={key}>
+                            <span className={styles.__options__title}>
+                                {section.nameSection}
+                            </span>
+                            <FooterListPages pages={section.pages} />
+                        </ul>
+                        }
+                    </React.Fragment>
                 )
             })
         }
