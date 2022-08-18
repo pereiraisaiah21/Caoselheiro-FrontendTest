@@ -13,7 +13,6 @@ Homepage de um site de vendas. Confira os requisitos: https://github.com/econver
 
 ⚙️ Sass
 
-
 ## ⚙️ Instruções
 
 Clone o repoitório:
@@ -27,5 +26,7 @@ npm install
 
 E em seguida, para executar rode:
 npm start
+
+Com isto o projeto será aberto em seu navegador.
 
 Com isto o projeto será aberto em seu navegador.
