@@ -1,9 +1,13 @@
 import React from "react";
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { Navigation, Pagination, A11y } from 'swiper';
+import { Navigation, Pagination } from 'swiper';
 
 import SectionTitle from "../../titles/components/SectionTitle";
 import ButtonPrimary from "../../button/ButtonPrimary";
+
+import Buddy from "../../../images/brand/buddy.png";
+import PetGames from "../../../images/brand/petgames.png";
+import Kong from "../../../images/brand/kong.png";
 
 import styles from "../Brand.module.scss";
 import 'swiper/css';
@@ -21,38 +25,18 @@ function BrandList () {
         {
             name : "Buddy",
             url : "",
-            image : ""
+            image : Buddy
         },
         {
             name : "PetGames",
             url : "",
-            image : ""
+            image : PetGames
         },
         {
             name : "Kong",
             url : "",
-            image : ""
-        },
-        {
-            name : "Buddy",
-            url : "",
-            image : ""
-        },
-        {
-            name : "PetGames",
-            url : "",
-            image : ""
-        },
-        {
-            name : "Kong",
-            url : "",
-            image : ""
-        },
-        {
-            name : "Kong",
-            url : "",
-            image : ""
-        },
+            image : Kong
+        }
     ];
 
     return (
@@ -79,7 +63,7 @@ function BrandList () {
                             return (
                                 <SwiperSlide className="" key={key}>
                                     <figure className={styles.__brand__carousel__item}>
-                                        <img alt={brand.name} className={styles.__brand__carousel__image} src="https://s3-alpha-sig.figma.com/img/61d5/7758/569855920eb97e4d6a56cfe1add20fb2?Expires=1661731200&Signature=X-Wt8CXXv37kzfixcMybhapFsAha5SuGLq~HyHKMopoF0QGyfBJttOw4mSf4mR0rbZL0m7Rd3ppVuD~EeJTaynbInHDHLM2o0sGN~OWF8p98nJBUvcLb8Tm05j~YhzVWd0EOZjZ3rNbUWlq2SYd1fEUoZtYPImhm~-T5HkW2YhP-YfYh4DcL6W7PcPi2nB~ZK3JUuGxoQweC~1J-zP~0S00wqaUfefsNaxOqxE0MOqBg~pNWKD5qac1TU1U9XAYH26O81rxxGxM03EwXAtl1dKXOhUabh1JNOHqO6wZszl6OG-fLRCVHocssF6mWZA1W-XDG6ymt0YuDPkSQgsnZEQ__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA" />
+                                        <img alt={brand.name} className={styles.__brand__carousel__image} src={brand.image} />
                                     </figure>
                                 </SwiperSlide>
                             )
