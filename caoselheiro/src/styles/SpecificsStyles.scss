@@ -25,16 +25,21 @@
 }
 #productCarousel {
     .swiper-wrapper {
-        padding: 0 0 50px;
+        padding: 0 0 72px;
     }
     .swiper-pagination {
         //margin-bottom: -30px;
     }
 }
-#announcementCarousel {}
+#announcementCarousel {
+    .swiper-pagination {
+        margin-bottom: -10px;
+    }
+}
 #productCarousel,
 #categoriesCarousel,
 #brandCarousel,
+#announcementCarousel,
 #blogCarousel {
     &.swiper {
         .swiper-pagination-bullet-active {
@@ -64,7 +69,6 @@
         }
     }
 }
-  
 #partners {
     display: block;
     font-weight: 700;
@@ -87,7 +91,6 @@
     margin: 0 12px 14px 3px;
     display: block;
 }
-  
 #master {
     img {
         margin-top: -12px;

@@ -8,12 +8,10 @@
     width: 100%;
     background-color: #FFF;
 }
-
 .__wrap {
     width: 100%;
     border-radius: 0 0 10px 10px;
 }
-
 .__adv__list {
     display: flex;
     justify-content: space-evenly;
@@ -41,7 +39,6 @@
         padding: 0 3px;
     }
 }
-
 .__scope {
     display: flex;
     justify-content: center;
@@ -109,7 +106,6 @@
         }
     }
 }
-
 .__menu {
     display: flex;
     justify-content: center;
@@ -155,9 +151,9 @@
         display: none;
     }
 }
-// Sm
+
 @media (min-width: 576px) {}
-// Md
+
 @media (min-width: 768px) {
     .header {
         height: 144px;
@@ -186,9 +182,9 @@
         }
     }
 }
-// Lg
+
 @media (min-width: 991px) {}
-// Xl
+
 @media (min-width: 1200px) {}
-// Xxl
+
 @media (min-width: 1400px) {}

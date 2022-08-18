@@ -36,20 +36,17 @@
        width: 100%;
        padding: 32px 10px;
        text-align: center;
-       div {
-        width: 100%;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        img {
-            // width: 90px;
-            // height: 60px;
-            margin-top: -4px;
+        div {
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            img {
+                margin-top: -4px;
+            }
         }
-       }
     }
     &__listImage {
-        // width: 30%;
         padding: 10px;
     }
     &__box {
@@ -97,7 +94,6 @@
         max-width: 100%;
     }
 }
-
 .__contact {
     border-top: 1px solid #FFF;
     width: 100%;
@@ -112,25 +108,20 @@
         line-height: 18px;
         color: #FFF;
     }
-    &__item {
-    }
     &__itemImage {
         display: flex;
         padding: 11px 0 0;
     }
-    &__anchor {}
     &__image {
         width: 106px;
         margin-left: 32px;
     }
 }
 
+@media (max-width: 575px) {}
 
-@media (max-width: 575px) {
-}
-// Sm
 @media (min-width: 576px) {}
-// Md
+
 @media (min-width: 768px) {
     .__wrap {
         grid-template: "sc op op" "sc op op" "sc op op" / 40% 60%;
@@ -139,14 +130,12 @@
         &__about {
             width: 339px;
             padding-top: 30px;
+            max-width: 100%;
         }
     }
     .__contact {
         flex-wrap: nowrap;
         padding: 40px 40px;
-        &__list {
-
-        }
     }
     .__options {
         &__list {
@@ -161,9 +150,9 @@
         }
     }
 }
-// Lg
+
 @media (min-width: 991px) {}
-// Xl
+
 @media (min-width: 1200px) {}
-// Xxl
+
 @media (min-width: 1400px) {}

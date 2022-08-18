@@ -1,3 +1,12 @@
+@font-face {
+    font-family: "Popins";
+    src: url("https://fonts.googleapis.com/css2?family=Poppins&display=swap") format("woff2")
+  }
+@font-face {
+    font-family: "Lato";
+    src: url("https://fonts.googleapis.com/css2?family=Lato&display=swap") format("woff2")
+  }
+
 // Background
 
 $bg-white : "";
@@ -26,3 +35,7 @@ $big : "";
 
 $radius-10 : "10px";
 $radius-20 : "20px";
+
+// Font-family
+
+$pop : "Popins";

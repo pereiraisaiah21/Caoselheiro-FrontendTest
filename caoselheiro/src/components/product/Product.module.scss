@@ -3,7 +3,7 @@
 .__wrap {
     max-width: 1280px;
     margin: auto;
-    padding: 80px 40px 0 40px;
+    padding: 30px 0 0 0;
 }
 
 .__carousel {
@@ -85,7 +85,6 @@
 
 .__item {
     position: relative;
-    &__box {}
     &__favorite {
         position: absolute;
         top: 0;
@@ -198,11 +197,17 @@
 
 
 @media (max-width: 575px) {
+    .__showcase {
+        padding: 20px 40px 0 40px;
+    }
 }
-// Sm
+
 @media (min-width: 576px) {}
-// Md
+
 @media (min-width: 768px) {
+    .__wrap {
+        padding: 30px 40px
+    }
     .__carousel {
         &__item {
             width: 277px;
@@ -218,9 +223,9 @@
         }
     }
 }
-// Lg
+
 @media (min-width: 991px) {}
-// Xl
+
 @media (min-width: 1200px) {}
-// Xxl
+
 @media (min-width: 1400px) {}

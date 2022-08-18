@@ -24,8 +24,6 @@ function AnnouncementPartnerCarousel ({
             spaceBetween={10}
             modules={[Pagination]}
             slidesPerView={1}
-            onSlideChange={() => console.log('slide change')}
-            onSwiper={(swiper) => console.log(swiper)}
             pagination={{ clickable: true }}
             className={styles.__carousel}
             loop={true}

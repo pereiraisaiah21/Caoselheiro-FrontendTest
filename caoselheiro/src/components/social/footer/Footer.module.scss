@@ -8,7 +8,6 @@
         padding: 0;
     }
 }
-
 .__social {
     &__list {
         margin-top: 32px;
@@ -30,17 +29,14 @@
 }
 
 
-@media (max-width: 575px) {
-}
-// Sm
+@media (max-width: 575px) {}
+
 @media (min-width: 576px) {}
-// Md
-@media (min-width: 768px) {
-   
-}
-// Lg
+
+@media (min-width: 768px) {}
+
 @media (min-width: 991px) {}
-// Xl
+
 @media (min-width: 1200px) {}
-// Xxl
+
 @media (min-width: 1400px) {}

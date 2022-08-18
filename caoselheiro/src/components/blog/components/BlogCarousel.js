@@ -23,7 +23,7 @@ function BlogCarousel ({
 
         <Swiper
             spaceBetween={10}
-            slidesPerView={(window.innerWidth < 768) ? 1 : 4}
+            slidesPerView={(window.innerWidth < 567) ? 1 : (window.innerWidth > 568 && window.innerWidth < 767 ? 2 : (window.innerWidth > 991  ? 4 : 4))}
             modules={[Navigation]}
             className={styles.__carousel}
             id="blogCarousel"

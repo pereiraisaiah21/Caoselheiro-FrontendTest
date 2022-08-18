@@ -57,8 +57,8 @@ function ProductCategories () {
             <div>
                 <Swiper
                     modules={[Navigation, Pagination, A11y]}
-                    spaceBetween={(window.innerWidth < 768) ? 10 : 16}
-                    slidesPerView={(window.innerWidth < 768) ? 1 : 4}
+                    spaceBetween={(window.innerWidth < 768) ? 10 : (window.innerWidth > 769 && window.innerWidth < 1000 ? 20 : 16)}
+                    slidesPerView={(window.innerWidth < 768) ? 1 : (window.innerWidth > 769 && window.innerWidth < 1000 ? 3 : 4)}
                     onSlideChange={() => console.log('slide change')}
                     onSwiper={(swiper) => console.log(swiper)}
                     navigation={true}

@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
+import Modal from "react-modal";
 
 import ProductCarousel from "./ProductCarousel";
 import ProductCarouselCategories from "./ProductCarouselCategories";
@@ -65,26 +66,29 @@ function ProductShowcase () {
     }, []) ;
 
     return (
-        <section className={styles.__showcase}>
-            <div className={styles.__showcase__wrap}>
-                <div className={styles.__showcase__info}>
-                    <div className={styles.__showcase__info__name}>
-                        <SectionTitle description="Meu cachorro..." />
+        <>
+            <section className={styles.__showcase}>
+                <div className={styles.__showcase__wrap}>
+                    <div className={styles.__showcase__info}>
+                        <div className={styles.__showcase__info__name}>
+                            <SectionTitle description="Meu cachorro..." />
+                        </div>
+                        <div className={styles.__showcase__info__categories}>
+                            <ProductCarouselCategories categories={productCategories.data} />
+                        </div>
                     </div>
-                    <div className={styles.__showcase__info__categories}>
-                        <ProductCarouselCategories categories={productCategories.data} />
-                    </div>
+                    {
+                        productData !== null
+                        ?
+                        <ProductCarousel products={productData.data} />
+                        :
+                        ""
+                    }
                 </div>
-                {
-                    productData !== null
-                    ?
-                    <ProductCarousel products={productData.data} />
-                    :
-                    ""
-                }
-            </div>
-            <ButtonPrimary text="Ver todos" styleClass={styles.__showcase__see} url="/produtos" />
-        </section>
+                <ButtonPrimary text="Ver todos" styleClass={styles.__showcase__see} url="/produtos" />
+            </section>
+           
+        </>
     );
 }
 
