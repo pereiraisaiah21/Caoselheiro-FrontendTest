@@ -15,19 +15,20 @@ Homepage de um site de vendas. Confira os requisitos: https://github.com/econver
 
 ## ⚙️ Instruções
 
-Clone o repoitório:
+:pushpin: Clone o repoitório:
 ```
 https://github.com/pereiraisaiah21/teste-front-end
 ```
-Após isto, via terminal:
+:arrow_down:Após isto, via terminal:
+```
 cd caoselheiro
-
-Atualize as dependencias:
+```
+:arrow_down:Atualize as dependencias:
+```
 npm install
-
-E em seguida, para executar rode:
+```
+:arrow_down:E em seguida, para executar rode:
+```
 npm start
-
-Com isto o projeto será aberto em seu navegador.
-
+```
 Com isto o projeto será aberto em seu navegador.
