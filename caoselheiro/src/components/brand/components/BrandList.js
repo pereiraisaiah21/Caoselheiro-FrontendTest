@@ -1,6 +1,6 @@
 import React from "react";
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { Navigation, Pagination } from 'swiper';
+import { Navigation } from 'swiper';
 
 import SectionTitle from "../../titles/components/SectionTitle";
 import ButtonPrimary from "../../button/ButtonPrimary";
@@ -14,6 +14,7 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import 'swiper/css/scrollbar';
+
 /**
  * 
  * @returns 
@@ -52,8 +53,6 @@ function BrandList () {
                     navigation={true}
                     spaceBetween={(window.innerWidth < 768) ? 5 : 16}
                     slidesPerView={(window.innerWidth < 768) ? 1 : 6}
-                    onSlideChange={() => console.log('slide change')}
-                    onSwiper={(swiper) => console.log(swiper)}
                     className={styles.__brand__carousel}
                     id="brandCarousel"
                     loop={true}

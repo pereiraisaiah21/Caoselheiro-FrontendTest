@@ -23,8 +23,6 @@ function HomeBanners () {
             <Swiper
                 spaceBetween={50}
                 slidesPerView={1}
-                onSlideChange={() => console.log('slide change')}
-                onSwiper={(swiper) => console.log(swiper)}
                 navigation={true} modules={[Navigation, Pagination]}
                 className={styles.__carousel__wrap}
             >

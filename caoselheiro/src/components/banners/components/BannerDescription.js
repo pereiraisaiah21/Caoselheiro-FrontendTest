@@ -1,5 +1,11 @@
 import React from "react";
 
+/**
+ * 
+ * @param {*} param0 
+ * @returns 
+ */
+
 function BannerDescription ({
     parentClass,
     textClass,

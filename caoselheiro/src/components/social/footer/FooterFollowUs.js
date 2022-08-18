@@ -6,6 +6,11 @@ import Youtube from "../../../images/social/youtube.png"
 
 import styles from "./Footer.module.scss";
 
+/**
+ * 
+ * @returns 
+ */
+
 function FooterFollowUs () {
 
     return (

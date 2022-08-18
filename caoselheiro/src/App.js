@@ -9,16 +9,14 @@ import './App.scss';
 
 function App() {
 
-  const [ storeDataValues ] = useState({
+  const [ storeDataValues, setStoreDataValues ] = useState({
     name : "O Cãoselheiro",
     alternativeName : "Cãoselheiro",
     logo : "",
     fantasy : "O Cãoselheiro Comércio LTDA",
     cnpj : "30.324.633/0001-16",
-    contact : [{
-      phone : "(11) 97212-1314",
-      email : "ocaoselheiro@ocaoselheiro.com.br"
-    }],
+    phone : "(11) 97212-1314",
+    email : "ocaoselheiro@ocaoselheiro.com.br",
     media : [{
       facebook : "/caoselheiro",
       instagram : "@caoselheiro",

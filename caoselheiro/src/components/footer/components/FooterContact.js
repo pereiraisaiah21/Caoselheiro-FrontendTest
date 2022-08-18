@@ -29,7 +29,7 @@ function FooterContact () {
                 </a>
             </div>
         </div>
-    )
+    );
 }
 
 export default FooterContact;

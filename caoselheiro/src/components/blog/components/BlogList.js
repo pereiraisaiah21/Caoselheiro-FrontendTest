@@ -4,6 +4,7 @@ import SectionTitle from "../../titles/components/SectionTitle";
 import BlogCarousel from "./BlogCarousel";
 
 import styles from "../Blog.module.scss";
+
 /**
  * 
  * @returns 

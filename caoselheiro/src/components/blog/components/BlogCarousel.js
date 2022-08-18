@@ -18,7 +18,6 @@ function BlogCarousel ({
     blogArticles
 }) {
 
-    console.log("7",blogArticles)
     return (
 
         <Swiper

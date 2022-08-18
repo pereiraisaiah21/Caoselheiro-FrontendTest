@@ -10,6 +10,7 @@ import InstagramImages from "../../components/social/instagram/components/Instag
 import Newsletter from "../../components/newsletter/Newsletter";
 
 import styles from "./Home.module.scss"
+
 /**
  * 
  * @returns 

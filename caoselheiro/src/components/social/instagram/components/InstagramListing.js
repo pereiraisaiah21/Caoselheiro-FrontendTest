@@ -4,6 +4,12 @@ import styles from "../Instagram.module.scss";
 import 'swiper/css';
 import 'swiper/css/navigation';
 
+/**
+ * 
+ * @param {*} param0 
+ * @returns 
+ */
+
 function InstagramListing ({
     imageSource
 }) {

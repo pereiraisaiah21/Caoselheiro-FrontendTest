@@ -1,5 +1,5 @@
-import React from "react";
-
+import React, { useContext } from "react";
+import StoreData from "../../../StoreData";
 import FooterListPages from "./FooterListPages";
 
 import Elo from "../../../images/footer/cards/elo.png";
@@ -19,6 +19,8 @@ import styles from "../Footer.module.scss";
  */
 
 function FooterList () {
+
+    const {storeDataValues} = useContext( StoreData );
 
     const footerLists = [
         {
@@ -78,13 +80,13 @@ function FooterList () {
                     image : ""
                 },
                 {
-                    description : "(11) 97212 - 1314",
+                    description : storeDataValues.phone,
                     url : "",
                     icon : Phone,
                     image : ""
                 },
                 {
-                    description : "ocaoselheiro@ocaoselheiro.com.br",
+                    description : storeDataValues.email,
                     url : "",
                     icon : "",
                     image : ""
@@ -108,35 +110,35 @@ function FooterList () {
                     id : "elo"
                 },
                 {
-                    description : "vISA",
+                    description : "Visa",
                     url : "",
                     icon : "",
                     image : Visa,
                     id : "visa"
                 },
                 {
-                    description : "mASTER",
+                    description : "Master",
                     url : "",
                     icon : "",
                     image : Master,
                     id : "master"
                 },
                 {
-                    description : "BOLETO",
+                    description : "Boleto",
                     url : "",
                     icon : "",
                     image : Bullet,
                     id : "bullet"
                 },
                 {
-                    description : "dINNERS",
+                    description : "Diners",
                     url : "",
                     icon : "",
                     image : Diners,
                     id : "dinner"
                 },
                 {
-                    description : "aMEX",
+                    description : "Amex",
                     url : "",
                     icon : "",
                     image : Amex,
@@ -189,7 +191,7 @@ function FooterList () {
             })
         }
         </div>
-    )
+    );
 }
 
 export default FooterList;

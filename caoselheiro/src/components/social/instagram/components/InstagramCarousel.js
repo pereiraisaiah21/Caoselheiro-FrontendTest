@@ -43,8 +43,6 @@ function InstgramCarousel () {
         <Swiper
             spaceBetween={-30}
             slidesPerView={(window.innerWidth < 768) ? 2 : 5}
-            onSlideChange={() => console.log('slide change')}
-            onSwiper={(swiper) => console.log(swiper)}
             modules={[Navigation]}
             className={styles.__carousel}
         >

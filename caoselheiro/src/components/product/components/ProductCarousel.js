@@ -27,17 +27,11 @@ function ProductCarousel ({
         setModalIsOpen(true);
     }
     
-    function afterOpenModal() {
-    // references are now sync'd and can be accessed.
-        // subtitle.style.color = '#f00';
-    }
-    
     function closeModal() {
         setModalIsOpen(false);
     }
 
     useEffect(() => {
-        console.log(productDataModal);
         if (productDataModal !== null && productDataModal !== "") {
             setModalIsOpen(true);
         }
@@ -50,8 +44,6 @@ function ProductCarousel ({
             <Swiper
                 spaceBetween={20}
                 slidesPerView={(window.innerWidth < 556) ? 1 : (window.innerWidth > 557 && window.innerWidth < 776 ? 2 : (window.innerWidth > 991  ? 4 : 3))}
-                onSlideChange={() => console.log('slide change')}
-                onSwiper={(swiper) => console.log(swiper)}
                 modules={[Navigation, Pagination]}
                 pagination={{ clickable: true }}
                 loop={true}
@@ -78,10 +70,8 @@ function ProductCarousel ({
                 </a>
                 </>
             </Swiper>
-
             <Modal
                 isOpen={modalIsOpen}
-                onAfterOpen={afterOpenModal}
                 onRequestClose={closeModal}
                 className="Modal"
                 overlayClassName="Overlay"
@@ -97,7 +87,7 @@ function ProductCarousel ({
                 <button className="ModalClose" onClick={closeModal}></button>
             </Modal>
         </>
-    )
+    );
 }
-;
+
 export default ProductCarousel;

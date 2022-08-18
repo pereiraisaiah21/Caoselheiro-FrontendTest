@@ -24,11 +24,9 @@ function Footer () {
                     <FooterList />
                     <FooterContact />
                 </div>
-
-
             </section>
         </footer>
-    )
+    );
 }
 
 export default Footer;

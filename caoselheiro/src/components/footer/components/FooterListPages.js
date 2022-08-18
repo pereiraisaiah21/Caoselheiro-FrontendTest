@@ -4,6 +4,7 @@ import styles from "../Footer.module.scss";
 
 /**
  * 
+ * @param {*} param0 
  * @returns 
  */
 
@@ -48,7 +49,7 @@ function FooterListPages ({
             }
            
         </div>
-    )
+    );
 }
 
 export default FooterListPages;
