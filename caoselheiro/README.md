@@ -1,4 +1,5 @@
-#Desafio técnico Econverse || Isaias Pereira
+Desafio técnico Econverse || Isaias Pereira
+
 
 Projeto teste para desenvolvedor junior. Desenvolver uma homepage de um site de ecommerce seguindo o modelo disponibilizado no seguinte link https://github.com/econverse-digital/teste-front-end.
 
@@ -7,7 +8,7 @@ Bibliotecas utilizadas
 ReactJs
 Axios
 
-Executando o projeto
+:gear: Executando o projeto
 
 Clone o repoitório:
 
