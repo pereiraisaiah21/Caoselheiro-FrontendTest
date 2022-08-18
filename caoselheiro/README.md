@@ -16,8 +16,9 @@ Homepage de um site de vendas. Confira os requisitos: https://github.com/econver
 ## ⚙️ Instruções
 
 Clone o repoitório:
+```
 https://github.com/pereiraisaiah21/teste-front-end
-
+```
 Após isto, via terminal:
 cd caoselheiro
 
