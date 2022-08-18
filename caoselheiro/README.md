@@ -2,16 +2,16 @@
 
 Homepage de um site de vendas. Confira os requisitos: https://github.com/econverse-digital/teste-front-end.
 
-## Bibliotecas utilizadas
+## :orange_book: Bibliotecas utilizadas
 
-⚙️ ReactJs
-⚙️ Axios
-⚙️ Swipe
-⚙️ React-router-dom
+:pushpin: ReactJs
+:pushpin: Axios
+:pushpin: Swipe
+:pushpin: React-router-dom
 
-## Pré-processadores
+## :label: Pré-processadores
 
-⚙️ Sass
+:pushpin: Sass
 
 ## ⚙️ Instruções
 
