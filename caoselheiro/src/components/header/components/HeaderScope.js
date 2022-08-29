@@ -14,7 +14,9 @@ import styles from "../Header.module.scss";
  */
 
 function HeaderScope () {
+
     return (
+
         <div className={styles.__scope}>
             <div className={styles.__scope__lg}>
                 <a href="" title="">
@@ -49,7 +51,7 @@ function HeaderScope () {
                 </a>
             </div>
         </div>
-    )
+    );
 }
 
 export default HeaderScope;

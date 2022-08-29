@@ -13,7 +13,9 @@ import styles from "./Footer.module.scss";
  */
 
 function Footer () {
+
     return (
+        
         <footer className={styles.footer}>
             <section className={styles.__wrap}>
                 <div className={styles.__social}>

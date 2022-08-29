@@ -20,15 +20,16 @@ function BlogCarousel ({
 }) {
 
     const handlePrevClick = () => {
-        const swiper = document.querySelector('#blogCarousel').swiper;
+        const swiper = document.querySelector( '#blogCarousel' ).swiper;
         swiper.slidePrev();
     }
     const handleNextClick = () => {
-        const swiper = document.querySelector('#blogCarousel').swiper;
+        const swiper = document.querySelector( '#blogCarousel' ).swiper;
         swiper.slideNext();
     }
 
     return (
+
         <>
             <button className={styles.__carousel__dotleft} onClick={handlePrevClick} />
             <Swiper

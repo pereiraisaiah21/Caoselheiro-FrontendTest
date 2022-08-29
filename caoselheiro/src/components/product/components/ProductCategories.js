@@ -41,11 +41,11 @@ function ProductCategories () {
     ];
     
     const handlePrevClick = () => {
-        const swiper = document.querySelector('#categoriesCarousel').swiper;
+        const swiper = document.querySelector( '#categoriesCarousel' ).swiper;
         swiper.slidePrev();
     }
     const handleNextClick = () => {
-        const swiper = document.querySelector('#categoriesCarousel').swiper;
+        const swiper = document.querySelector( '#categoriesCarousel' ).swiper;
         swiper.slideNext();
     }
 
@@ -79,7 +79,7 @@ function ProductCategories () {
                 <button className={styles.__carousel__dotright} onClick={handleNextClick} />
             </div>
         </section>
-    )
+    );
 }
 
 export default ProductCategories;

@@ -1,13 +1,11 @@
 .swiper-pagination-bullet-active {
     background: rgb(112, 107, 107);
 }
-
 #announcementCarousel {
     .swiper-pagination {
         bottom: 2px;
     }
 }
-
 #blogCarousel,
 #productCarousel {
     .swiper-pagination {
@@ -15,82 +13,6 @@
         padding: 16px 0 0;
     }
 }
-// #categoriesCarousel {
-   
-// }
-
-// #productCategoriesCarousel {
-//     // .swiper-wrapper {
-//     //     padding: 0 20px;
-//     // }
-//     &.swiper {
-//         .swiper-button-prev {
-//             left: -13px;
-//         }
-//         .swiper-button-next {
-//             right: -13px;
-//         }
-//         .swiper-button-prev,
-//         .swiper-button-next {
-//             width: 32px;
-//             top: 20px;
-//             height: 40px;
-//             background-color: #FFF;
-//             z-index: 10;
-//             &:after {
-//                 font-size: 12px !important;
-//                 color: #FBB900;
-//                 font-weight: 700;
-//                 padding: 7px 1px 8px 2px;
-//             }
-//         }
-//     }
-// }
-// #productCarousel {
-//     .swiper-wrapper {
-//         padding: 0 0 72px;
-//     }
-//     .swiper-pagination {
-//         //margin-bottom: -30px;
-//     }
-// }
-// #announcementCarousel {
-//     .swiper-pagination {
-//         margin-bottom: -10px;
-//     }
-// }
-// #productCarousel,
-// #brandCarousel,
-// #announcementCarousel,
-// #blogCarousel {
-//     &.swiper {
-//         .swiper-pagination-bullet-active {
-//             background: rgb(110, 110, 110);
-//         }
-//         .swiper-button-prev {
-//             margin-left: -10px;
-//         }
-//         .swiper-button-mext {
-//             margin-right: -10px;
-//         }
-//         .swiper-button-prev,
-//         .swiper-button-next {
-//             border-radius: 50px;
-//             width: 32px;
-//             height: 32px;
-//             padding: 6px 4px 6px 2px;
-//             box-shadow: inset 0px -2px 4px rgb(251 204 243);
-//             background-color: #FFF;
-//             z-index: 10;
-//             &:after {
-//                 font-size: 12px !important;
-//                 color: black;
-//                 font-weight: 700;
-//                 padding: 7px 1px 8px 2px;
-//             }
-//         }
-//     }
-// }
 #partners {
     display: block;
     font-weight: 700;

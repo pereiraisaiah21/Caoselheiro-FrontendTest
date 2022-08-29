@@ -17,15 +17,16 @@ function ProductCarouselCategories ({
 }) {
 
     const handlePrevClick = () => {
-        const swiper = document.querySelector('#productCategoriesCarousel').swiper;
+        const swiper = document.querySelector( '#productCategoriesCarousel' ).swiper;
         swiper.slidePrev();
     }
     const handleNextClick = () => {
-        const swiper = document.querySelector('#productCategoriesCarousel').swiper;
+        const swiper = document.querySelector( '#productCategoriesCarousel' ).swiper;
         swiper.slideNext();
     }
 
     return (
+        
         <>
             <button className={styles.__carousel__dotleft2} onClick={handlePrevClick} />
             <Swiper

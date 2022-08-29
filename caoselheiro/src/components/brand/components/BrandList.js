@@ -41,11 +41,11 @@ function BrandList () {
     ];
 
     const handlePrevClick = () => {
-        const swiper = document.querySelector('#categoriesCarousel').swiper;
+        const swiper = document.querySelector( '#categoriesCarousel' ).swiper;
         swiper.slidePrev();
     }
     const handleNextClick = () => {
-        const swiper = document.querySelector('#categoriesCarousel').swiper;
+        const swiper = document.querySelector( '#categoriesCarousel' ).swiper;
         swiper.slideNext();
     }
 

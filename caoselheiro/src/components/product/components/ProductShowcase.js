@@ -9,6 +9,10 @@ import ButtonPrimary from "../../button/ButtonPrimary";
 
 import styles from "../Product.module.scss";
 
+/**
+ * 
+ * @returns 
+ */
 
 function ProductShowcase () {
 
@@ -66,6 +70,7 @@ function ProductShowcase () {
     }, []) ;
 
     return (
+
         <>
             <section className={styles.__showcase}>
                 <div className={styles.__showcase__wrap}>

@@ -14,6 +14,7 @@ import styles from "../Header.module.scss";
 function HeaderAdvantages () {
 
     return (
+
         <ul className={styles.__adv__list}>
             <li className={styles.__adv__list__item}>
                 <img alt="" className={styles.__adv__list__image} src={Checked}/> Compra <span className={styles.__adv__list__textHighlight}> 100% segura </span>
@@ -24,7 +25,7 @@ function HeaderAdvantages () {
                 <img alt="" className={styles.__adv__list__image} src={CreditCard}/><span className={styles.__adv__list__textHighlight}> Parcele </span> suas compras
             </li>
         </ul>
-    )
+    );
 }
 
 export default HeaderAdvantages;

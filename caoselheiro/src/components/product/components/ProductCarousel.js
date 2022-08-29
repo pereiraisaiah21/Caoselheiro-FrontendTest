@@ -20,31 +20,31 @@ function ProductCarousel ({
     products
 }) {
 
-    const [ productDataModal, setProducDataModal ] = useState("");
-    const [modalIsOpen, setModalIsOpen] = useState(false);
+    const [ productDataModal, setProducDataModal ] = useState( "" );
+    const [ modalIsOpen, setModalIsOpen ] = useState( false );
     
     function openModal() {
-        setModalIsOpen(true);
+        setModalIsOpen( true );
     }
     
     function closeModal() {
-        setModalIsOpen(false);
+        setModalIsOpen( false );
     }
 
     useEffect(() => {
-        if (productDataModal !== null && productDataModal !== "") {
-            setModalIsOpen(true);
+        if ( productDataModal !== null && productDataModal !== "" ) {
+            setModalIsOpen( true );
         }
     }, [productDataModal]);
 
-    Modal.setAppElement('#root');
+    Modal.setAppElement( '#root' );
 
     const handlePrevClick = () => {
-        const swiper = document.querySelector('#productCarousel').swiper;
+        const swiper = document.querySelector( '#productCarousel' ).swiper;
         swiper.slidePrev();
     }
     const handleNextClick = () => {
-        const swiper = document.querySelector('#productCarousel').swiper;
+        const swiper = document.querySelector( '#productCarousel' ).swiper;
         swiper.slideNext();
     }
 

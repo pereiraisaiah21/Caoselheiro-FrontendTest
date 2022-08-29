@@ -11,7 +11,9 @@ import styles from "./Newsletter.module.scss";
  */
 
 function Newsletter () {
+
     return (
+        
         <section className={styles.news}>
             <div className={styles.__news__img} />
             <form className={styles.__news__form}>

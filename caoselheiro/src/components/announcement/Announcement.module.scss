@@ -85,9 +85,6 @@
     &__desc {
         align-self: flex-end;
         padding: 0 0 20px 20px;
-        // position: absolute;
-        // bottom: 50px;
-        // left: 60px;
     }
     &__text {
         color: #4D4D4D;
@@ -146,12 +143,10 @@
         height: unset;
         &__box {
             padding: unset;
-            // border-radius: 20px;
             margin: unset;
         }
         &__desc {
             max-width: 295px;
-            //padding: 90px 0 0 10px;
         }
         &__info {
             color: #9F9F9F;

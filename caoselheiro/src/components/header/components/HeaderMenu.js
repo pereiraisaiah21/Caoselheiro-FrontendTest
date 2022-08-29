@@ -39,6 +39,7 @@ function HeaderMenu () {
     ];
 
     return (
+
         <div className={styles.__menu}>
             <ul className={styles.__menu__list}>
                 {
@@ -65,7 +66,7 @@ function HeaderMenu () {
                 </li>
             </ul>
         </div>
-    )
+    );
 }
 
 export default HeaderMenu;

@@ -25,7 +25,7 @@ function AnnouncementPartner () {
             description : "As melhores guias para os melhores passeios",
             url : "/Announ"
         },
-    ]
+    ];
 
     return (
 
