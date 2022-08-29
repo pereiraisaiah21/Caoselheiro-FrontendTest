@@ -12,31 +12,34 @@
     width: 100%;
     border-radius: 0 0 10px 10px;
 }
-.__adv__list {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    height: 32px;
-    width: 100%;
-    border-bottom: 1px solid #ccc;
-    max-width: 1280px;
-    margin: auto;
-    &__item {
-        font-family: Poppins, sans-serif;
-        color: #9F9F9F;
-        font-size: 12px;
-        line-height: 18px;
-        display: none;
+.__adv {
+    &__list {
+        display: flex;
+        justify-content: space-evenly;
         align-items: center;
-    }
-    &__image {
-        height: 20px;
-        width: 20px;
-        margin-right: 10px;
-    }
-    &__textHighlight {
-        color: #FBB900;
-        padding: 0 3px;
+        height: 32px;
+        width: 100%;
+        border-bottom: 1px solid #cccccc36;
+        max-width: 1280px;
+        margin: auto;
+        &__item {
+            font-family: Poppins, sans-serif;
+            color: #9F9F9F;
+            font-size: 12px;
+            line-height: 18px;
+            display: none;
+            align-items: center;
+        }
+        &__image {
+            height: 20px;
+            width: 20px;
+            margin-right: 10px;
+        }
+        &__textHighlight {
+            color: #FBB900;
+            padding: 0 3px;
+            font-weight: 600;
+        }
     }
 }
 .__scope {
@@ -46,13 +49,20 @@
     max-width: 1280px;
     margin: 0 auto;
     height: 72px;
-    border-bottom: 1px solid #ccc;
+    border-bottom: 1px solid #cccccc36;
     padding: 10px;
     &__lg {
         width: 40%;
         text-align: center;
         img {
             width: 100%;
+        }
+    }
+    &__menum {
+        display: none;
+        img {
+            max-width: 59px;
+            margin-top: -7px;
         }
     }
     &__sr {
@@ -75,9 +85,16 @@
             font-size: 14px;
             line-height: 21px;
             color: #9F9F9F;
+            font-weight: 600;
             height: 48px;
             width: 100%;
             font-weight: 500;
+            
+            &::placeholder {
+                font-size: 14px;
+                color: #9F9F9F;
+                font-weight: 500;
+            }
         }
         &__button {
             border: none;
@@ -97,8 +114,8 @@
         justify-content: flex-end;
         align-items: center;
         &__icon {
-            width: 24px;
-            height: 24px;
+            width: 28px;
+            height: 28px;
         }
         &__item {
             display: block;
@@ -147,8 +164,18 @@
 }
 
 @media (max-width: 575px) {
+    .header {
+        height: auto;
+    }
+    .__adv__list,
     .__menu {
         display: none;
+    }
+    .__scope {
+        justify-content: space-between;
+        &__menum {
+            display: block;
+        }
     }
 }
 

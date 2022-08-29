@@ -40,6 +40,15 @@ function BrandList () {
         }
     ];
 
+    const handlePrevClick = () => {
+        const swiper = document.querySelector('#categoriesCarousel').swiper;
+        swiper.slidePrev();
+    }
+    const handleNextClick = () => {
+        const swiper = document.querySelector('#categoriesCarousel').swiper;
+        swiper.slideNext();
+    }
+
     return (
 
         <section className={styles.__brand}>
@@ -47,10 +56,11 @@ function BrandList () {
                 <SectionTitle description="Principais marcas" />
                 <ButtonPrimary text="Ver todos" styleClass={styles.__brand__see} url="/brands" />
             </div>
-            <div>
+            <div className={styles.__brand__carousel}>
+                <button className={styles.__carousel__dotleft} onClick={handlePrevClick} />
                 <Swiper
                     modules={[Navigation]}
-                    navigation={true}
+                    navigation={false}
                     spaceBetween={(window.innerWidth < 768) ? 5 : 16}
                     slidesPerView={(window.innerWidth < 768) ? 1 : 6}
                     className={styles.__brand__carousel}
@@ -69,6 +79,7 @@ function BrandList () {
                         })
                     }
                 </Swiper>
+                <button className={styles.__carousel__dotright} onClick={handleNextClick} />
             </div>
         </section>
     );

@@ -4,6 +4,7 @@ import Package from "../../../images/icons/package.png";
 import Heart from "../../../images/icons/heart.png";
 import User from "../../../images/icons/user.png";
 import Cart from "../../../images/icons/cart.png";
+import Bar from "../../../images/icons/menu.png";
 
 import styles from "../Header.module.scss";
 
@@ -18,6 +19,11 @@ function HeaderScope () {
             <div className={styles.__scope__lg}>
                 <a href="" title="">
                     <img alt="" className="" src="https://http2.mlstatic.com/storage/mshops-appearance-api/images/66/329672766/logo-2020101912314304400.png" />
+                </a>
+            </div>
+            <div className={styles.__scope__menum}>
+                <a href="" title="">
+                    <img alt="" className="" src={Bar} />
                 </a>
             </div>
             <div className={styles.__scope__sr}>

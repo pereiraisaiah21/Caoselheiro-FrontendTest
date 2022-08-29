@@ -35,7 +35,9 @@ function AnnouncementPartner () {
                     <AnnouncementPartnerCarousel className={styles.__carousel} announcementImages={announcementImages} />
                 </div>
                 <div className={styles.__signature}>
-                    <AnnouncementPartnerSignature className={styles.__post} />
+                    <div className={styles.__signature__fluter}>
+                        <AnnouncementPartnerSignature className={styles.__post} />
+                    </div>
                 </div>
             </div>
         </section>

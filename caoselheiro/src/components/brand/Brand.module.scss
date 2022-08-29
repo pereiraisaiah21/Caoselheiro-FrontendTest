@@ -1,9 +1,28 @@
-
+@mixin carouselArrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 2;
+    height: 60px;
+    width: 60px;
+    border: none;
+    background-color: unset;
+    background-repeat: no-repeat;
+    background-size: contain !important;
+}
+@mixin arrowLeft {
+    left: -25px;
+    background: url(../../images/icons/left.png);
+}
+@mixin arrowRight {
+    right: -25px;
+    background: url(../../images/icons/right.png);
+}
 
 .__brand {
     max-width: 1280px;
     margin: auto;
-    padding: 80px 0 0;
+    padding: 60px 0 0;
     &__info {
         display: flex;
         justify-content: space-between;
@@ -12,10 +31,12 @@
     &__see {
         color: #FBB900;
         text-decoration: underline;
+        font-weight: 700;
     }
     &__carousel {
+        position: relative;
         &__item {
-            box-shadow: inset 0px 0px 2px #E5E5E5, inset 0px -2px 10px rgba(178, 134, 0, 0.12);
+            box-shadow: inset 0px 0px 0px #e5e5e5, inset 0px -2px 10px rgb(178 134 0 / 12%);
             border: 1px solid #E5E5E5;
             border-radius: 20px;
             width: inherit;
@@ -27,14 +48,26 @@
             padding: 20px 10px;
         }
         &__image {
-            max-width: 90px;
+            max-width: 100px;
         }
+    }
+}
+
+.__carousel {
+    position: relative;
+    &__dotleft {
+        @include carouselArrow;
+        @include arrowLeft;
+    }
+    &__dotright {
+        @include carouselArrow;
+        @include arrowRight; 
     }
 }
 
 @media (max-width: 575px) {
     .__brand {
-        padding: 80px 40px;
+        padding: 80px 20px;
     }
 }
 

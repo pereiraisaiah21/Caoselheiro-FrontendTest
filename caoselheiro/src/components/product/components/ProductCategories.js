@@ -23,43 +23,44 @@ function ProductCategories () {
 
     const categories = [
         {
-            desc : "Petisco",
+            desc : "Brinquedos",
             src : Brinquedos
         },
         {
-            desc : "Petisco",
+            desc : "Petiscos",
             src : Petiscos
         },
         {
-            desc : "Petisco",
+            desc : "Guias",
             src : Guias
         },
         {
-            desc : "Petisco",
+            desc : "Higiene",
             src : Higiene
         },
-        {
-            desc : "Petisco",
-            src : Brinquedos
-        },
-        {
-            desc : "Petisco",
-            src : Petiscos
-        },
     ];
+    
+    const handlePrevClick = () => {
+        const swiper = document.querySelector('#categoriesCarousel').swiper;
+        swiper.slidePrev();
+    }
+    const handleNextClick = () => {
+        const swiper = document.querySelector('#categoriesCarousel').swiper;
+        swiper.slideNext();
+    }
 
     return (
 
         <section className={styles.__wrap}>
-            <div>
-                <SectionTitle description="Categorias" />
-            </div>
-            <div>
+            <SectionTitle description="Categorias" />
+            <div className={styles.__carousel}>
+                <button className={styles.__carousel__dotleft} onClick={handlePrevClick} />
                 <Swiper
                     modules={[Navigation, Pagination, A11y]}
                     spaceBetween={(window.innerWidth < 768) ? 10 : (window.innerWidth > 769 && window.innerWidth < 1000 ? 20 : 16)}
                     slidesPerView={(window.innerWidth < 768) ? 1 : (window.innerWidth > 769 && window.innerWidth < 1000 ? 3 : 4)}
-                    navigation={true}
+                    navigation={false}
+                    loop={true}
                     id="categoriesCarousel"
                 >
                     {
@@ -75,6 +76,7 @@ function ProductCategories () {
                         })
                     }
                 </Swiper>
+                <button className={styles.__carousel__dotright} onClick={handleNextClick} />
             </div>
         </section>
     )

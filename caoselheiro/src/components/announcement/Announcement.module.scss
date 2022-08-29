@@ -4,14 +4,15 @@
     display: flex;
     flex-wrap: wrap;
     padding: 100px 0 0;
+    position: relative;
 }
 .__box {
     width: 100%;
-    padding: 0 10px 0 0;
+    padding: 0;
 }
 .__carousel {
     position: relative;
-    padding: 12px 0 10px;
+    padding: 12px 0 30px;
     &__fig {
         width: inherit;
         margin: 0;
@@ -55,27 +56,38 @@
 .__signature {
     width: 100%;
     height: 350px;
-    padding: 0 0 18px;
-    &__box {
-        background-color: #FEF6E7;
+    padding: 0 0 28px;
+    margin-left: 42px;
+    &__fluter {
         position: relative;
         width: 100%;
         height: 100%;
         padding: 0 0 30px;
-        border-radius: 0;
         padding: 10px 0 0;
-        margin: 30px 0 0;
+    }
+    &__box {
+        background-color: #FEF6E7;
+        border-radius: 20px 0 0 20px;
+        position: absolute;
+        width: 110%;
+        height: 100%;
+        top: -20px;
+        right: -50px;
+        align-items: baseline;
+        display: flex;
     }
     &__image {
         position: absolute;
         bottom: -10px;
         right: 0;
-        height: 120%;
+        height: 112%;
     }
     &__desc {
-        position: absolute;
-        bottom: 50px;
-        left: 60px;
+        align-self: flex-end;
+        padding: 0 0 20px 20px;
+        // position: absolute;
+        // bottom: 50px;
+        // left: 60px;
     }
     &__text {
         color: #4D4D4D;
@@ -101,10 +113,24 @@
 
 @media (max-width: 575px) {
     .__wrap {
-        padding: 20px 40px 0;
+        padding: 20px 20px 0;
     }
     .__box {
         margin-bottom: 20px;
+    }
+    .__signature {
+        margin: 0;
+        &__box {
+            position: relative;
+            right: unset;
+        }
+        &__image {
+            height: 60%;
+            right: 10px;
+        }
+        &__info {
+            max-width: 180px;
+        }
     }
 }
 
@@ -113,20 +139,19 @@
 @media (min-width: 768px) {
     .__wrap {
         flex-wrap: nowrap;
-        padding: 100px 40px 0;
+        padding: 80px 40px 0;
     }
     .__signature {
         width: 50%;
         height: unset;
         &__box {
             padding: unset;
-            border-radius: 20px;
+            // border-radius: 20px;
             margin: unset;
         }
         &__desc {
-            bottom: 50px;
-            left: 60px;
-            max-width: 199px;
+            max-width: 295px;
+            //padding: 90px 0 0 10px;
         }
         &__info {
             color: #9F9F9F;

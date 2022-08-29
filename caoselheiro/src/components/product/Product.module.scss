@@ -1,7 +1,68 @@
+@mixin carouselArrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 2;
+    height: 60px;
+    width: 60px;
+    border: none;
+    background-color: unset;
+    background-repeat: no-repeat;
+    background-size: contain !important;
+}
+@mixin carouselArrow2 {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 2;
+    height: 20px;
+    width: 20px;
+    border: none;
+    background-color: unset;
+    background-repeat: no-repeat;
+    background-size: contain !important;
+}
+@mixin arrowLeft {
+    left: -30px;
+    background: url(../../images/icons/left.png);
+}
+@mixin arrowRight {
+    right: -30px;
+    background: url(../../images/icons/right.png);
+}
+@mixin arrowLeft2 {
+    left: -40px;
+    background: url(../../images/icons/left2.png);
+}
+@mixin arrowRight2 {
+    right: -20px;
+    background: url(../../images/icons/right2.png);
+}
+
 .__wrap {
     max-width: 1280px;
     margin: auto;
     padding: 30px 0 0 0;
+}
+
+.__carousel {
+    position: relative;
+    &__dotleft {
+        @include carouselArrow;
+        @include arrowLeft;
+    }
+    &__dotright {
+        @include carouselArrow;
+        @include arrowRight; 
+    }
+    &__dotleft2 {
+        @include carouselArrow2;
+        @include arrowLeft2;
+    }
+    &__dotright2 {
+        @include carouselArrow2;
+        @include arrowRight2; 
+    }
 }
 
 .__carousel {
@@ -34,10 +95,15 @@
 .__showcase {
     max-width: calc(1280px + 100px);
     margin: auto;
-    padding: 80px 40px 0 40px;
+    padding: 60px 40px 0 40px;
     &__wrap {
         display: flex;
         flex-wrap: wrap;
+        position: relative;
+    }
+    &__carousel {
+        position: relative;
+        padding: 0 0 30px;
     }
     &__see {
         color: #FBB900;
@@ -45,7 +111,10 @@
         text-decoration: underline;
         display: block;
         text-align: center;
-        margin-top: -60px;
+        font-weight: 700;
+        margin-top: -56px;
+        cursor: pointer;
+        z-index: 3;
     }
     &__info {
         display: flex;
@@ -60,9 +129,12 @@
             align-items: center;
             justify-content: flex-end;
             margin: 10px 0 20px;
+            position: relative;
         }
         &__carousel {
             display: flex;
+            margin-right: 20px;
+            padding: 10px 0;
         }
         &__button {
             border: none;
@@ -194,8 +266,11 @@
 
 
 @media (max-width: 575px) {
+    .__wrap {
+        padding: 20px;
+    }
     .__showcase {
-        padding: 20px 40px 0 40px;
+        padding: 20px 20px 0 20px;
     }
 }
 
@@ -203,11 +278,11 @@
 
 @media (min-width: 768px) {
     .__wrap {
-        padding: 30px 40px
+        padding: 10px 40px
     }
     .__carousel {
         &__item {
-            width: 277px;
+            //width: 277px;
         }
     }
     .__showcase {

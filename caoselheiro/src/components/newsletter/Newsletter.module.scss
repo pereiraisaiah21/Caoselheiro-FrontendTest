@@ -84,10 +84,15 @@
 
 
 @media (max-width: 575px) {
+    .__news {
+        &__form {
+            max-width: 90%;
+        }
+    }
 }
-// Sm
+
 @media (min-width: 576px) {}
-// Md
+
 @media (min-width: 768px) {
     .__news {
         &__img {
@@ -95,9 +100,9 @@
         }
     }
 }
-// Lg
+
 @media (min-width: 991px) {}
-// Xl
+
 @media (min-width: 1200px) {}
-// Xxl
+
 @media (min-width: 1400px) {}

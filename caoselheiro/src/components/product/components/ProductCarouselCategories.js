@@ -16,33 +16,45 @@ function ProductCarouselCategories ({
     categories
 }) {
 
+    const handlePrevClick = () => {
+        const swiper = document.querySelector('#productCategoriesCarousel').swiper;
+        swiper.slidePrev();
+    }
+    const handleNextClick = () => {
+        const swiper = document.querySelector('#productCategoriesCarousel').swiper;
+        swiper.slideNext();
+    }
+
     return (
-        
-        <Swiper
-            spaceBetween={14}
-            slidesPerView={(window.innerWidth < 768) ? 2 : 5}
-            modules={[Navigation]}
-            className={styles.__showcase__info__carousel}
-            navigation={true}
-            id="productCategoriesCarousel"
-            loop={true}
-        >
-            {
-                categories !== null
-                ?
-                categories.map( ( category, key ) => {
-                    return (
-                        <SwiperSlide key={key}>
-                            <button className={styles.__showcase__info__button}>
-                                { category.name }
-                            </button>
-                        </SwiperSlide>
-                    )
-                })
-                :
-                ""
-            }
-        </Swiper>
+        <>
+            <button className={styles.__carousel__dotleft2} onClick={handlePrevClick} />
+            <Swiper
+                spaceBetween={8}
+                slidesPerView={(window.innerWidth < 768) ? 2 : 5}
+                modules={[Navigation]}
+                className={styles.__showcase__info__carousel}
+                navigation={false}
+                id="productCategoriesCarousel"
+                loop={true}
+            >
+                {
+                    categories !== null
+                    ?
+                    categories.map( ( category, key ) => {
+                        return (
+                            <SwiperSlide key={key}>
+                                <button className={styles.__showcase__info__button}>
+                                    { category.name }
+                                </button>
+                            </SwiperSlide>
+                        )
+                    })
+                    :
+                    ""
+                }
+            </Swiper>
+            <button className={styles.__carousel__dotright2} onClick={handleNextClick} />
+        </>
     );
 }
 

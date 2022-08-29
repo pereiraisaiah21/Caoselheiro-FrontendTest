@@ -39,15 +39,25 @@ function ProductCarousel ({
 
     Modal.setAppElement('#root');
 
+    const handlePrevClick = () => {
+        const swiper = document.querySelector('#productCarousel').swiper;
+        swiper.slidePrev();
+    }
+    const handleNextClick = () => {
+        const swiper = document.querySelector('#productCarousel').swiper;
+        swiper.slideNext();
+    }
+
     return (
         <>
+            <button className={styles.__carousel__dotleft} onClick={handlePrevClick} />
             <Swiper
                 spaceBetween={20}
                 slidesPerView={(window.innerWidth < 556) ? 1 : (window.innerWidth > 557 && window.innerWidth < 776 ? 2 : (window.innerWidth > 991  ? 4 : 3))}
                 modules={[Navigation, Pagination]}
                 pagination={{ clickable: true }}
                 loop={true}
-                navigation={true}
+                navigation={false}
                 id="productCarousel"
                 className={styles.__showcase__carousel}
             >
@@ -70,6 +80,8 @@ function ProductCarousel ({
                 </a>
                 </>
             </Swiper>
+            <button className={styles.__carousel__dotright} onClick={handleNextClick} />
+
             <Modal
                 isOpen={modalIsOpen}
                 onRequestClose={closeModal}
