@@ -19,10 +19,6 @@ Homepage de um site de vendas. Confira os requisitos: https://github.com/econver
 ```
 https://github.com/pereiraisaiah21/teste-front-end
 ```
-:arrow_down:Após isto, via terminal:
-```
-cd caoselheiro
-```
 :arrow_down:Atualize as dependencias:
 ```
 npm install
