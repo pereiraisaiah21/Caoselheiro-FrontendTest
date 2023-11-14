@@ -7,7 +7,7 @@ Homepage de um site de vendas. Confira os requisitos: https://github.com/econver
 :pushpin: ReactJs
 :pushpin: Axios
 :pushpin: Swipe
-:pushpin: React-modal
+:pushpin: React-router-dom
 
 ## :label: Pré-processadores
 
