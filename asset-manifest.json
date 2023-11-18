@@ -1,0 +1,32 @@
+{
+  "files": {
+    "main.css": "/Caoselheiro-FrontendTest/static/css/main.0f8dd2a2.css",
+    "main.js": "/Caoselheiro-FrontendTest/static/js/main.5de69a53.js",
+    "static/media/guias.png": "/Caoselheiro-FrontendTest/static/media/guias.0a6dfa58fe3906d13ad2.png",
+    "static/media/banner01.png": "/Caoselheiro-FrontendTest/static/media/banner01.4b7926bd7df67a089da2.png",
+    "static/media/brinquedos.png": "/Caoselheiro-FrontendTest/static/media/brinquedos.a89af186bc4263f990ea.png",
+    "static/media/post03.png": "/Caoselheiro-FrontendTest/static/media/post03.231a0b0529d385ea1c62.png",
+    "static/media/post06.png": "/Caoselheiro-FrontendTest/static/media/post06.231a0b0529d385ea1c62.png",
+    "static/media/post02.png": "/Caoselheiro-FrontendTest/static/media/post02.9140196661985ae4b9bc.png",
+    "static/media/post05.png": "/Caoselheiro-FrontendTest/static/media/post05.9140196661985ae4b9bc.png",
+    "static/media/partner.png": "/Caoselheiro-FrontendTest/static/media/partner.29e86025825538b9be05.png",
+    "static/media/higiene.png": "/Caoselheiro-FrontendTest/static/media/higiene.8f1853dce89ac45219f2.png",
+    "static/media/post01.png": "/Caoselheiro-FrontendTest/static/media/post01.215c2b325b20761915b4.png",
+    "static/media/post04.png": "/Caoselheiro-FrontendTest/static/media/post04.215c2b325b20761915b4.png",
+    "static/media/petiscos.png": "/Caoselheiro-FrontendTest/static/media/petiscos.7e2057c446f85c5c9929.png",
+    "static/media/signature.png": "/Caoselheiro-FrontendTest/static/media/signature.fffaa216bfdb4500ff5b.png",
+    "static/media/buddy.png": "/Caoselheiro-FrontendTest/static/media/buddy.8a66e6919f73c515f8e4.png",
+    "static/media/kong.png": "/Caoselheiro-FrontendTest/static/media/kong.7bcbc1b0ef00c2dc4e99.png",
+    "static/media/left.png": "/Caoselheiro-FrontendTest/static/media/left.fbda534ceb841820531b.png",
+    "static/media/arrowDown.png": "/Caoselheiro-FrontendTest/static/media/arrowDown.6549a1f3124370954954.png",
+    "static/media/right.png": "/Caoselheiro-FrontendTest/static/media/right.5c667cd00ab42b7da251.png",
+    "static/media/petgames.png": "/Caoselheiro-FrontendTest/static/media/petgames.8545ea46bd0b9aa98da2.png",
+    "index.html": "/Caoselheiro-FrontendTest/index.html",
+    "main.0f8dd2a2.css.map": "/Caoselheiro-FrontendTest/static/css/main.0f8dd2a2.css.map",
+    "main.5de69a53.js.map": "/Caoselheiro-FrontendTest/static/js/main.5de69a53.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.0f8dd2a2.css",
+    "static/js/main.5de69a53.js"
+  ]
+}
