@@ -1,30 +1,51 @@
-# Teste Econverse || Isaias Pereira
+# Caoselheiro-FrontendTest
 
-Homepage de um site de vendas. Confira os requisitos: https://github.com/econverse-digital/teste-front-end.
+Welcome to the GitHub repository for Caoselheiro, a React project developed as a test for Econverse. This project aims to materialize the Figma design of the website, showcasing the seamless integration of design concepts into a functional and responsive React application.
 
-## :orange_book: Bibliotecas utilizadas
+## Prerequisites
 
-:pushpin: ReactJs
-:pushpin: Axios
-:pushpin: Swipe
-:pushpin: React-router-dom
+Before you begin, make sure you have Node.js and npm installed on your machine.
 
-## :label: Pré-processadores
+- [Node.js](https://nodejs.org/)
+- [npm](https://www.npmjs.com/)
 
-:pushpin: Sass
+## Installation
 
-## ⚙️ Instruções
+1. Clone this repository:
 
-:pushpin: Clone o repoitório:
-```
-https://github.com/pereiraisaiah21/teste-front-end
-```
-:arrow_down:Atualize as dependencias:
-```
-npm install
-```
-:arrow_down:E em seguida, para executar rode:
-```
-npm start
-```
-Com isto o projeto será aberto em seu navegador.
+    ```bash
+    git clone https://github.com/pereiraisaiah21/Caoselheiro-FrontendTest.git
+    ```
+
+2. Navigate to the project directory:
+
+    ```bash
+    cd Caoselheiro-FrontendTest
+    ```
+
+3. Install the dependencies:
+
+    ```bash
+    npm install
+    ```
+
+## Running the Application
+
+01. Now that all dependencies are installed, you can start the application with the following command:
+
+    ```bash
+    npm start
+    ```
+
+This command will launch the application in development mode. Open http://localhost:5173 in your browser to view the application.
+
+## Technologies Used
+
+- React.js
+
+## Contribution
+If you'd like to contribute to this project, feel free to open an issue or submit a pull request.
+
+## License
+This project is licensed under the MIT License.
+Feel free to copy and paste this into your README.md file and customize it according to your project details.
